@@ -11,20 +11,28 @@
   <link rel="stylesheet" href="css/reset.css?v=1.0">
   <link rel="stylesheet" href="css/animation.css?v=1.0">
   <link rel="stylesheet" href="css/loader.css?v=1.0">
+  <link rel="stylesheet" href="css/cursor.css?v=1.0">
   <link rel="preload" href="img/svg/loader.svg" as="image">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/loader.js"></script>
+  <script src="js/cursor.js"></script>
 
 </head>
 
 <body>
+  <!-- cursor -->
+  <div id="cursor" class="">
+    <div class="text"></div>
+  </div>
+  <div class="test-area-01" data-cursor="round" data-text="drag" data-bg="#0d0d0d" data-color="#fff" >hover me</div>
   <!-- loading... -->
   <div class="waiting-for-content">
-    <div class="group">
+    <div class="group" >
       <div class="icon"></div>
       <div class="progress"><span class="num">0</span><span class="perc">%</span></div>
     </div>
   </div>
+  <div class="test-area-02" data-cursor="round" data-text="chill" data-bg="#0d0d0d" data-color="#fff" >hover me</div>
   <!---->
 </body>
 </html>
