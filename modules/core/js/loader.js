@@ -1,17 +1,32 @@
-$(document).ready(function() {
+//$(document).ready(function() {
   var current_progress = 0,
     step = 1; // the smaller this is the slower the progress bar
-  function startLoader() {
-    interval = setInterval(function() {
-      current_progress += step;
-      progress = Math.round(Math.atan(current_progress) / (Math.PI / 2) * 100 * 1000) / 1000
-      $(".progress .num").text(Math.ceil(progress));
-      if (progress >= 100) {
-        clearInterval(interval);
-      } else if (progress >= 30) {
-        step = 0.1
-      }
-    }, 100);
+  function startLoader(stop) {
+      interval = setInterval(function() {
+        current_progress += step;
+        progress = Math.round(Math.atan(current_progress) / (Math.PI / 2) * 100 * 1000) / 1000
+        $(".progress .num").text(Math.ceil(progress));
+        if (progress >= 100) {
+          clearInterval(interval);
+        } else if (progress >= 60) {
+          step = 0.4
+        }
+      }, 100);
   }
   startLoader(); // начинаем индикацию загрузки
+//});
+$(window).bind("load", function () {
+  setTimeout(function(){
+    $('.waiting-for-content').addClass('done');
+  }, 2000);
+  setTimeout(function(){
+    $("html, body").animate({
+        scrollTop: 0
+      }, 1
+    );
+    $('.waiting-for-content').fadeOut(function(){ $(this).remove() });
+    //$('.animationWait').each(function( index ) {
+      //$(this).removeClass('animationWait');
+    //});
+  }, 2500);
 });

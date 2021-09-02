@@ -80,6 +80,22 @@
   z-index: 6;
   top: 0;
   left: 0;
+  overflow: hidden;
+}
+.waiting-for-content:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -100%;
+  right: 0;
+  left: 0;
+  width: 1000vw;
+  height: 100vh;
+  background-color: #fff;
+  transition: 0.7s top ease;
+}
+.waiting-for-content.done:after {
+  top: 0;
 }
 .waiting-for-content .group {
   display: flex;
