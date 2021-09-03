@@ -5,7 +5,7 @@ $(window).bind("load", function () {
   function init() {
     elements = document.querySelectorAll('.animationWait');
     windowHeight = window.innerHeight;
-    vh30 = windowHeight * 30 / 100;
+    vh = windowHeight * 20 / 100;
     console.log('initialization')
   }
 
@@ -14,7 +14,7 @@ $(window).bind("load", function () {
       var element = elements[i];
       var positionFromTop = element.getBoundingClientRect().top;
       var h = positionFromTop - windowHeight;
-      if (h <= -vh30) {
+      if (h <= -vh) {
            $(element).removeClass('animationWait').addClass('animationDelay');
            console.log(element)
         init();

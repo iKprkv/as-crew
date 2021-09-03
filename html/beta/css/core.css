@@ -39,6 +39,10 @@ body {
     background-size: 100%;
     background-image: url(../img/svg/arrow-top-right.svg);
   }
+  a.arrow:hover:before {
+    -webkit-animation: jello-vertical 0.8s both;
+  	        animation: jello-vertical 0.8s both;
+  }
 /* colors */
   .c-5a5a5a {
     color: #5a5a5a;
