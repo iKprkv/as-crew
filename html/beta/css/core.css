@@ -99,3 +99,16 @@ body {
   .t-uppr {
     text-transform: uppercase;
   }
+@media screen and (max-width: 900px) {
+  a.arrow:before {
+    width: 12px;
+    height: 11px;
+    right: -24px;
+  }
+  .t-19 {
+    font-size: 14px;
+  }
+  .t-30 {
+    font-size: 24px;
+  }
+}

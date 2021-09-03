@@ -4,24 +4,19 @@ $(window).bind("load", function () {
 
   function init() {
     elements = document.querySelectorAll('.animationWait');
-    console.log(elements)
     windowHeight = window.innerHeight;
-    vh30 = windowHeight * 40 / 100;
-    console.log('vh='+vh30)
+    vh30 = windowHeight * 30 / 100;
     console.log('initialization')
-    //console.log(elements)
   }
 
   function checkPosition() {
-    console.log('checks')
     for (var i = 0; i < elements.length; i++) {
       var element = elements[i];
-      console.log(element);
       var positionFromTop = element.getBoundingClientRect().top;
       var h = positionFromTop - windowHeight;
-      //console.log(element+'='+h)
-      if (positionFromTop - windowHeight <= -vh30) {
+      if (h <= -vh30) {
            $(element).removeClass('animationWait').addClass('animationDelay');
+           console.log(element)
         init();
       }
     }
