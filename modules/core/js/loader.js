@@ -18,7 +18,7 @@
 $(window).bind("load", function () {
   setTimeout(function(){
     $('.waiting-for-content').addClass('done');
-  }, 2000);
+  }, 500); //2000
   setTimeout(function(){
     $("html, body").animate({
         scrollTop: 0
@@ -28,5 +28,5 @@ $(window).bind("load", function () {
     //$('.animationWait').each(function( index ) {
       //$(this).removeClass('animationWait');
     //});
-  }, 2500);
+  }, 1000); //2500
 });

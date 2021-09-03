@@ -1,3 +1,16 @@
+.animationWait {
+  -webkit-animation: none !important;
+  animation: none !important;
+}
+.animationDelay {
+  -webkit-animation-delay: 0.4s !important;
+  animation-delay: 0.4s !important;
+}
+.fade-in {
+  opacity: 0;
+	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0;
