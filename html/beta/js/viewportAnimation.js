@@ -26,7 +26,7 @@ $(window).bind("load", function () {
   checkPosition();
 
   $(window).scroll(function() {
-    if($(window).scrollTop() + $(window).height() == $(document).height()) {
+    if($(window).scrollTop() + ($(window).height() + 70) >= $(document).height()) {
       $(".animationWait").each(function() {
         $(this).removeClass('animationWait').addClass('animationDelay');
       });

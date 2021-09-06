@@ -3,6 +3,9 @@
   padding: 160px 0 150px 0;
   min-height: auto;
 }
+#reviews .subtitle {
+  margin: 8px 0 0 0;
+}
 #reviews .carousel {
   margin: 122px 0 0 0;
   display: flex;
@@ -34,6 +37,7 @@
   padding: 22px 0 0px 0;
 }
 #reviews .reviews-counter {
+  display: none;
   position: absolute;
   right: 19px;
   margin: 40px 0 0 0;
@@ -45,6 +49,9 @@
   right: 19px;
 }
 @media screen and (max-width: 900px) {
+  #reviews .subtitle {
+    margin: 12px 0 0 0;
+  }
   #reviews .subtitle.t-30 {
     font-size: 19px;
     line-height: 1.37;
@@ -72,7 +79,12 @@
     width: 325px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
+  #reviews .reviews-counter {
+    display: block;
+  }
+}
+@media screen and (max-width: 450px) {
 #reviews .carousel .quotes::before {
   left: 25px;
 }
