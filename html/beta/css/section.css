@@ -3,16 +3,7 @@
   min-height: 100vh;
   background-color: #fff;
   color: #0d0d0d;
-  /* temp */
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 100px;
-  font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  text-transform: uppercase; */
+  overflow: hidden;
   box-sizing: border-box;
 }
 .section.dark {
