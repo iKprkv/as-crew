@@ -5,6 +5,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   max-height: 917.9px;
+  min-height: 917.9px;
 }
 
 #footer .container.left-padding {
@@ -72,6 +73,7 @@
 @media screen and (max-width: 900px) {
   #footer {
     max-height: 533px;
+    min-height: 533px;
     padding: 43px 0 0 0;
   }
   #footer .info {

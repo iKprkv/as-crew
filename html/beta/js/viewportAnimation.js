@@ -6,7 +6,7 @@ $(window).bind("load", function () {
     elements = document.querySelectorAll('.animationWait');
     windowHeight = window.innerHeight;
     vh = windowHeight * 20 / 100;
-    console.log('initialization')
+    //console.log('initialization')
   }
 
   function checkPosition() {
@@ -16,7 +16,7 @@ $(window).bind("load", function () {
       var h = positionFromTop - windowHeight;
       if (h <= -vh) {
            $(element).removeClass('animationWait').addClass('animationDelay');
-           console.log(element)
+           //console.log(element)
         init();
       }
     }
@@ -26,6 +26,13 @@ $(window).bind("load", function () {
   checkPosition();
 
   $(window).scroll(function() {
-    checkPosition();
+    if($(window).scrollTop() + $(window).height() == $(document).height()) {
+      $(".animationWait").each(function() {
+        $(this).removeClass('animationWait').addClass('animationDelay');
+      });
+    }
+    else {
+     checkPosition();
+    }
   })
 });

@@ -1,6 +1,6 @@
 .section {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #fff;
   color: #0d0d0d;
   /* temp */
@@ -50,6 +50,9 @@
   .section .container {
     padding: 0 25px;
     box-sizing: border-box;
+  }
+  .section .container.left-padding {
+    padding: 0 25px;
   }
   .section .title {
     font-size: 44px;

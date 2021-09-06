@@ -44,6 +44,15 @@ body {
   	        animation: jello-vertical 0.8s both;
   }
 /* colors */
+  .c-6c6c6c {
+    color: #6c6c6c;
+  }
+  .c-c91559 {
+    color: #c91559;
+  }
+  .c-black {
+    color: #000;
+  }
   .c-5a5a5a {
     color: #5a5a5a;
   }
@@ -91,6 +100,9 @@ body {
   }
   .t-lh-1-2 {
     line-height: 1.2;
+  }
+  .t-lh-1-6 {
+    line-height: 1.6;
   }
   .t-lh-1-33 {
     line-height: 1.33;
