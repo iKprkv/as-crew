@@ -2,9 +2,9 @@ $(document).ready(function() {
   function is_touch_enabled() {
     return ( 'ontouchstart' in window ) || ( navigator.maxTouchPoints > 0 ) || ( navigator.msMaxTouchPoints > 0 );
   }
+  var cursor = $('#cursor');
   console.log('Touch: '+is_touch_enabled());
   if (!is_touch_enabled()) {
-    var cursor = $('#cursor');
     $(document).on('mousemove', function(e){
       setTimeout(function(){
         cursor.css('left',e.pageX);
@@ -38,5 +38,8 @@ $(document).ready(function() {
       cursor.removeClass('round').html('');
     });
     // round end
+  }
+  else {
+    cursor.remove();
   }
 });

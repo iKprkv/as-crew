@@ -40,8 +40,11 @@ body {
     background-image: url(../img/svg/arrow-top-right.svg);
   }
   a.arrow:hover:before {
-    -webkit-animation: jello-vertical 0.8s both;
-  	        animation: jello-vertical 0.8s both;
+    -webkit-animation: arrow-top-right 0.5s both;
+  	        animation: arrow-top-right 0.5s both;
+  }
+  .padding-30-0 {
+    padding: 30px 0;
   }
 /* colors */
   .c-6c6c6c {
@@ -84,9 +87,18 @@ body {
     font-style: normal;
     letter-spacing: normal;
   }
+  .t-175 {
+    font-size: 175px;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+  }
 /* text weight */
   .t-w-n {
     font-weight: normal;
+  }
+  .t-w-600 {
+    font-weight: 600;
   }
   .t-w-800 {
     font-weight: 800;
@@ -106,6 +118,9 @@ body {
   }
   .t-lh-1-33 {
     line-height: 1.33;
+  }
+  .t-lh-3-3 {
+    line-height: 3.3;
   }
 /* text-align */
   .t-a-left {

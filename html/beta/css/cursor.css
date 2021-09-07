@@ -3,8 +3,8 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
   margin: -5px 0 0 -5px;
   border: 0;
   background: #0d0d0d;
@@ -45,8 +45,6 @@
 #cursor.round .text {
   position: relative;
   z-index: 5;
-  -webkit-animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 #cursor.white {
   background-color: #fff;
