@@ -5,7 +5,7 @@ $(window).bind("load", function () {
   function init() {
     elements = document.querySelectorAll('.animationWait');
     windowHeight = window.innerHeight;
-    vh = windowHeight * 25 / 100;
+    vh = windowHeight * 15 / 100;
     //console.log('initialization')
   }
 

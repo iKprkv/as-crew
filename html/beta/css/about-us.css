@@ -82,12 +82,11 @@
   padding: 30px;
   z-index: 1;
 }
-#about-us .person a svg {
-  transition: 0.3s color ease;
+#about-us .person a svg path {
+  transition: 0.2s fill ease;
 }
 #about-us .person a:hover svg {
-  -webkit-animation: jello-vertical 0.8s both;
-          animation: jello-vertical 0.8s both;
+
 }
 #about-us .person a:hover svg path {
   fill: #fff;

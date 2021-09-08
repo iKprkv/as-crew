@@ -7,8 +7,8 @@ $(document).ready(function() {
   if (!is_touch_enabled()) {
     $(document).on('mousemove', function(e){
       setTimeout(function(){
-        cursor.css('left',e.pageX);
-        cursor.css('top',e.pageY);
+        cursor.css('left',e.clientX);
+        cursor.css('top',e.clientY);
       }, 20);
     });
 

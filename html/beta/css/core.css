@@ -37,6 +37,7 @@ body {
     width: 18.2px;
     height: 17.2px;
     background-size: 100%;
+    animation: none;
     background-image: url(../img/svg/arrow-top-right.svg);
   }
   a.arrow:hover:before {
