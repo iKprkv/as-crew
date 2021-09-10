@@ -20,12 +20,12 @@ $(document).ready(function() {
     });
 
     // link begin
-    $("a").on('mouseenter', function(e){
-      cursor.fadeOut( "fast", function() {});
-    })
-    $("a").on('mouseleave', function(e){
-      cursor.fadeIn( "fast", function() {});
-    })
+    // $("a").on('mouseenter', function(e){
+    //   cursor.fadeOut( "fast", function() {});
+    // })
+    // $("a").on('mouseleave', function(e){
+    //   cursor.fadeIn( "fast", function() {});
+    // })
     // link end
 
     // round begin

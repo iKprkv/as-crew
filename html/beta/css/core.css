@@ -88,6 +88,12 @@ body {
     font-style: normal;
     letter-spacing: normal;
   }
+  .t-100 {
+    font-size: 100px;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+  }
   .t-175 {
     font-size: 175px;
     font-stretch: normal;
