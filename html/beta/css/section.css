@@ -37,6 +37,13 @@
   flex-grow: 1;
   flex-basis: 0;
 }
+@media screen and (max-width: 1440px) {
+  .section .container,
+  .section .container.left-padding {
+    padding: 0 150px;
+    box-sizing: border-box;
+  }
+}
 @media screen and (max-width: 900px) {
   .section .container {
     padding: 0 25px;

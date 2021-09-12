@@ -132,8 +132,8 @@
             transform-origin: 50% 50%;
   }
   25% {
-    -webkit-transform: translate(7px, -7px);
-            transform: translate(7px, -7px);
+    -webkit-transform: translate(5px, -5px);
+            transform: translate(5px, -5px);
   }
   50% {
     -webkit-transform: translate(-2px, 2px);
@@ -264,12 +264,11 @@
 
 @-webkit-keyframes line {
   0% {
-    opacity: 0;
-    width: 100px;
+    width: 0;
   }
   100% {
     width: 100%;
-    opacity: 0.35;
+
   }
 }
 

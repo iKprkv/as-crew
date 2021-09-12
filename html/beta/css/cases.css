@@ -19,7 +19,19 @@
   padding-top: 0;
 }
 
-#cases .case:after {
+#cases .case:not(:first-child):after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  opacity: 0.35;
+   border-bottom: 1px solid #6c6c6c;
+  -webkit-animation: line 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;
+}
+#cases .case:last-child:before {
   content: '';
   display: block;
   width: 1px;
@@ -27,8 +39,9 @@
   position: absolute;
   bottom: 0;
   z-index: 0;
-  background-color: #6c6c6c;
-  -webkit-animation: line 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;
+  opacity: 0.35;
+   border-bottom: 1px solid #6c6c6c;
+  -webkit-animation: line 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
 }
 
 #cases .case .container {
@@ -41,7 +54,7 @@
   display: inline-block;
   position: relative;
   z-index: 1;
-  /* animation-delay: 0.3s; */
+   /*animation-delay: 0.2s;*/
 }
 
 #cases .case .text:hover,
@@ -55,7 +68,7 @@
   opacity: 0;
   z-index: 1;
   position: relative;
-  transition: 0.1s opacity ease;
+  transition: 1s opacity ease;
   -webkit-animation: slide-in-blurred-left 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 	        animation: slide-in-blurred-left 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
@@ -114,7 +127,7 @@
 
 /* runner */
 .runner .teaser .content img {
-  max-width: 483px;
+  max-width: 444px;
 }
 
 .runner .teaser {
@@ -124,34 +137,60 @@
 
 /* vacuum */
 .vacuum .teaser .content img {
-  max-width: 607px;
+  max-width: 567px;
 }
 
 .vacuum .teaser {
-  bottom: 144px;
-  left: -40px;
+  bottom: 108px;
+  left: -16px;
 }
 
-/* vara */
+/* vera */
 .vera .teaser .content img {
-  max-width: 660px;
+  max-width: 556px;
 }
 
 .vera .teaser {
-  bottom: 340px;
-  left: -40px;
+  bottom: 219px;
+  left: -28px;
 }
 /* 360 */
 .cover360 .teaser .content img {
-  max-width: 660px;
+  max-width: 566px;
 }
 
 .cover360 .teaser {
-  bottom: 385px;
-  left: -134px;
+  bottom: 325px;
+  left: -124px;
   z-index: 1 !important;
 }
-
+@media screen and (max-width: 1440px) {
+  #cases .case {
+    padding: 20px 0;
+  }
+  #cases .case .text {
+    font-size: 80px;
+    line-height: 1.2;
+  }
+  #cases {
+    overflow: initial;
+  }
+  .megacity .container .text img {
+    margin: 0 0 0 15px;
+    max-width: 84.2px;
+  }
+  .megacity .teaser {
+    bottom: 395px;
+    left: -248px;
+  }
+  /* #cases .case .text-wrapper {
+    flex-grow: 1;
+  }
+  #cases .case .teaser .content {
+    left: auto;
+    right: -150px;
+  } */
+}
 @media screen and (max-width: 900px) {
   #cases {
     display: none;

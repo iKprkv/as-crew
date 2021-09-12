@@ -71,8 +71,8 @@
   margin-top: 200px;
 }*/
 #about-us .person.anna {
-  margin-top: -40px;
-  margin-bottom: 70px;
+  margin-top: -50px;
+  margin-bottom: 120px;
 }
 
 #about-us .person a {
@@ -148,6 +148,14 @@
 #about-us .teammates .name {
     padding: 18px 0 6px 0;
 }
+@media screen and (max-width: 1440px) {
+  #about-us .columns .col {
+    max-width: 48%;
+  }
+  #about-us .teammates .pic {
+    max-width: 280px;
+  }
+}
 @media screen and (max-width: 1200px) {
   #about-us .teammates {
 
@@ -161,9 +169,6 @@
   }
 }
 @media screen and (max-width: 1170px) {
-  #about-us .columns .col {
-    max-width: 48%;
-  }
   #about-us .person.sveta .effect img {
     width: 13vw;
     height: auto;
@@ -171,6 +176,14 @@
   #about-us .person.anna .effect img {
     width: 9vw;
     height: auto;
+  }
+  #about-us .title .text {
+    order: -1;
+    width: 100%;
+    padding: 0 0 24px 0;
+  }
+  #about-us .title {
+    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 900px) {
@@ -222,9 +235,7 @@
   #about-us #brands {
       margin: 20px 0;
   }
-  #about-us .title {
-    flex-wrap: wrap;
-  }
+
   #about-us .title .text {
     order: -1;
     width: 100%;
