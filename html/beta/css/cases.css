@@ -179,10 +179,7 @@
     margin: 0 0 0 15px;
     max-width: 84.2px;
   }
-  .megacity .teaser {
-    bottom: 395px;
-    left: -248px;
-  }
+
   /* #cases .case .text-wrapper {
     flex-grow: 1;
   }
@@ -190,6 +187,12 @@
     left: auto;
     right: -150px;
   } */
+}
+@media screen and (max-width: 1024px) {
+  .megacity .teaser {
+    bottom: 395px;
+    left: -248px;
+  }
 }
 @media screen and (max-width: 900px) {
   #cases {
