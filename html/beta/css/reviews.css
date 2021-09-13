@@ -48,9 +48,21 @@
   top: 0;
   right: 19px;
 }
+@media screen and (max-width: 1440px) {
+  #reviews {
+    padding: 72px 0 20px 0;
+  }
+  #reviews .subtitle {
+    padding-left: 170px;
+  }
+  #reviews .carousel {
+    margin: 50px 0 0 0;
+  }
+}
 @media screen and (max-width: 900px) {
   #reviews .subtitle {
     margin: 12px 0 0 0;
+    padding: 0;
   }
   #reviews .subtitle.t-30 {
     font-size: 19px;
@@ -60,7 +72,7 @@
     padding: 42px 0;
   }
   #reviews .carousel {
-    margin: 40px 0 0 0;
+    margin: 30px 0 0 0;
   }
   #reviews .carousel .quotes {
     padding: 40px 25px 20px 0;
@@ -90,5 +102,5 @@
 }
 #reviews .carousel .quotes {
   width: 85vw;
-  padding: 40px 25px 20px 25px;
+  padding: 50px 25px 20px 25px;
 }

@@ -137,6 +137,16 @@ body {
   .t-uppr {
     text-transform: uppercase;
   }
+
+@media screen and (max-width: 1440px) {
+  .t-19 {
+    font-size: 16px;
+  }
+  .t-30 {
+    font-size: 22px;
+  }
+}
+
 @media screen and (max-width: 900px) {
   a.arrow:before {
     width: 12px;

@@ -41,7 +41,7 @@ $(document).ready(function(){
     dots: false,
     arrows: false,
     infinite: true,
-    adaptiveHeight: true,
+    adaptiveHeight: false,
     variableWidth: true,
     slidesToShow: 1,
     slidesToScroll: 1,
