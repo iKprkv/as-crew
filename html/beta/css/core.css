@@ -133,6 +133,9 @@ body {
   .t-a-left {
     text-align: left;
   }
+  .t-a-right {
+    text-align: right;
+  }
 /* text-uppercase */
   .t-uppr {
     text-transform: uppercase;

@@ -1,0 +1,10 @@
+.scroll-text {
+  position: absolute;
+  bottom: 41px;
+  text-align: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  -webkit-animation: wobble-hor-bottom 0.8s both;
+	        animation: wobble-hor-bottom 0.8s both;
+}

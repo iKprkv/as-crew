@@ -1,4 +1,40 @@
 $(document).ready(function(){
+  // cases
+  if (window.innerWidth <= 900) {
+    var cases = $('#cases .projects-list');
+    cases.addClass('animationWait fade-in');
+    cases.on('init', function(event, slick){
+      $('<div class="cases-counter t-14 c-6c6c6c animationWait slide-in-right"><span class="current c-fff">'+((slick.slickCurrentSlide()+1)<10 ? '0'+(slick.slickCurrentSlide()+1):slick.slickCurrentSlide()+1)+'</span>  |  <span class="">'+ (slick.slideCount<10 ? '0'+slick.slideCount : slick.slideCount)+'</div>').insertBefore(this);
+    })
+    $("#cases .projects-list .case .teaser img").each(function() {
+      var src = $(this).attr('src');
+      var srcMob = src.replace("img/cases/", "img/cases/mobile/");
+      $(this).attr('src',srcMob);
+      var href = $(this).parent().parent().parent().find('.text').attr('href');
+      var text = $(this).parent().parent().parent().find('.text-wrapper')
+      $(this).wrap('<a class="wrapper" href='+href+'>');
+      text.appendTo( $(this).parent() );
+    });
+    cases.slick({
+      lazyLoad: 'progressive',
+      dots: false,
+      arrows: false,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      responsive: [
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+    });
+    cases.on("afterChange", function(event, slick) {
+      $('.cases-counter .current').text((slick.slickCurrentSlide()+1)<10 ? '0'+(slick.slickCurrentSlide()+1):slick.slickCurrentSlide()+1);
+    });
+  }
   // team
   if (window.innerWidth <= 900) {
     var team = $('#team');

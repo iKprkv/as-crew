@@ -1,6 +1,7 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
 
@@ -17,7 +18,7 @@
   <link rel="stylesheet" href="css/cursor.css?v=1.0">
   <link rel="preload" href="img/svg/loader.svg" as="image">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="css/slick/slick.css" />
   <script type="text/javascript" src="js/slick/slick.min.js"></script>
   <script type="text/javascript" src="js/slick/slick-init.js"></script>
   <script src="js/loader.js"></script>
@@ -34,20 +35,107 @@
   </div>
   <!-- loading... -->
   <div class="waiting-for-content">
-    <div class="group" >
+    <div class="group">
       <div class="icon"></div>
       <div class="progress"><span class="num">0</span><span class="perc">%</span></div>
     </div>
   </div>
   <!---->
   <div class="section home">
+    <link rel="stylesheet" href="css/home.css?v=1.0">
+    <div class="container">
+      <!---->
+      <!-- <div class="text-wrapper">
+        <div class="title animationWait text-appear">Scroll down</div>
+      </div> -->
+      <!---->
+      <div class="scroll-text t-14 c-0d0d0d t-lh-1-2 wobble-hor-bottom">Scroll to explore</div>
+      <!---->
+    </div>
+  </div>
+  <!-- OVERVIEW -->
+  <div id="overview" class="section dark">
+    <link rel="stylesheet" href="css/overview.css?v=1.0">
+    <script src="js/overview.js"></script>
     <div class="container">
       <!---->
       <div class="text-wrapper">
-        <div class="title animationWait text-appear">Scroll down</div>
+        <div class="title">
+          <div class="text t-19 t-lh-3-3 t-a-right t-w-n c-0d0d0d animationWait fade-in">What we do</div>
+        </div>
+      </div>
+      <!---->
+      <div class="text-wrapper">
+        <div data-tab="digital" class="tab title active animationWait text-appear">Digital</div>
+      </div>
+      <div class="text-wrapper">
+        <div data-tab="branding" class="tab title animationWait text-appear">Branding</div>
       </div>
       <!---->
     </div>
+    <div class="container tab-area left-padding animationWait fade-in">
+      <div class="columns">
+        <div class="col words">
+          <div class="text digital active t-19 t-lh-1-6 t-w-n c-0d0d0d">
+            <div class="text-wrapper">
+              <div class="animationWait text-appear">Web Design</div>
+            </div>
+            <div class="text-wrapper">
+              <div class="animationWait text-appear">Development</div>
+            </div>
+            <div class="text-wrapper">
+              <div class="animationWait text-appear">UI/UX</div>
+            </div>
+            <div class="text-wrapper">
+              <div class="animationWait text-appear">E-Commerce</div>
+            </div>
+            <div class="text-wrapper">
+              <div class="animationWait text-appear">Digital Products</div>
+            </div>
+          </div>
+          <div class="text branding t-19 t-lh-1-6 t-w-n c-0d0d0d">
+            <div class="text-wrapper">
+              <div class="animationWait text-appear">Art Direction</div>
+            </div>
+            <div class="text-wrapper">
+              <div class="animationWait text-appear">Brand Strategy</div>
+            </div>
+            <div class="text-wrapper">
+              <div class="animationWait text-appear">Identity Design</div>
+            </div>
+            <div class="text-wrapper">
+              <div class="animationWait text-appear">Illustration</div>
+            </div>
+            <div class="text-wrapper">
+              <div class="animationWait text-appear">Graphic design</div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row text">
+            <div class="text digital active t-19 t-lh-1-6 t-w-n c-0d0d0d animationWait fade-in">
+              We are offering a full cycle of digital design services that will help you create your website, landing page, mobile app design, social media design, email design, and custom CMS/WordPress website development. In our projects we
+              consider all modern digital design trends and requirements and create a digital experience that people actually want to interact with.
+            </div>
+            <div class="text branding t-19 t-lh-1-6 t-w-n c-0d0d0d animationWait fade-in">
+              We take charge of your entire brand identity, starting from a brand strategy and color scheme, including logo design development, typography, brand guideline and brand book, business cards, emailing, icons, and illustrations. We create identities that translate your company values best, connect a company with its audience, and turns that audience into loyal customers.
+            </div>
+          </div>
+          <div class="row buttons">
+            <div class="text-wrapper">
+              <a class="start-project arrow t-30 t-w-800 t-lh-1.2 t-a-left c-fff t-uppr underline animationWait text-appear" href="#">see Price</a>
+            </div>
+            <div class="text-wrapper">
+              <a class="start-project arrow t-30 t-w-800 t-lh-1.2 t-a-left c-fff t-uppr underline animationWait text-appear" href="#">Start a project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---->
+
+    </div>
+    <!---->
   </div>
   <!-- CASES -->
   <div id="cases" class="section dark">
@@ -64,100 +152,96 @@
     </div>
     <div class="projects-list">
       <!---->
-        <div class="case megacity animationWait">
-          <div class="container">
-            <div class="text-wrapper">
-              <a href="#" class="text c-fff t-100 t-w-800 t-lh-1-2 animationWait text-appear" data-case="megacity">Megacity<img class="" src="img/svg/brands/pwc-logo-white.svg"></a>
-            </div>
-            <div class="teaser">
-              <div class="content">
-                <img src="img/cases/megacity-teaser@2x.png">
-              </div>
+      <div class="case megacity animationWait">
+        <div class="container">
+          <div class="text-wrapper">
+            <a href="#" class="text c-fff t-100 t-w-800 t-lh-1-2 animationWait text-appear" data-case="megacity">Megacity<img class="" src="img/svg/brands/pwc-logo-white.svg"></a>
+          </div>
+          <div class="teaser">
+            <div class="content">
+              <img src="img/cases/megacity-teaser@2x.png">
             </div>
           </div>
         </div>
-        <!---->
-        <div class="case avon animationWait">
-          <div class="container">
-            <div class="text-wrapper">
-              <a href="#" class="text c-fff t-100 t-w-800 t-lh-1-2 animationWait text-appear" data-case="avon">Avon</a>
-            </div>
-            <div class="teaser">
-              <div class="content">
-                <img src="img/cases/avon-teaser@2x.png">
-              </div>
+      </div>
+      <!---->
+      <div class="case avon animationWait">
+        <div class="container">
+          <div class="text-wrapper">
+            <a href="#" class="text c-fff t-100 t-w-800 t-lh-1-2 animationWait text-appear" data-case="avon">Avon</a>
+          </div>
+          <div class="teaser">
+            <div class="content">
+              <img src="img/cases/avon-teaser@2x.png">
             </div>
           </div>
         </div>
-        <!---->
-        <div class="case almette animationWait">
-          <div class="container">
-            <div class="text-wrapper">
-              <a href="#" class="text c-fff t-100 t-w-800 t-lh-1-2  animationWait text-appear" data-case="almette">Almette</a>
-            </div>
-            <div class="teaser">
-              <div class="content">
-                <a href="#">
-                  <img src="img/cases/almette-teaser@2x.png">
-                </a>
-              </div>
+      </div>
+      <!---->
+      <div class="case almette animationWait">
+        <div class="container">
+          <div class="text-wrapper">
+            <a href="#" class="text c-fff t-100 t-w-800 t-lh-1-2  animationWait text-appear" data-case="almette">Almette</a>
+          </div>
+          <div class="teaser">
+            <div class="content">
+              <img src="img/cases/almette-teaser@2x.png">
             </div>
           </div>
         </div>
-        <!---->
-        <div class="case runner animationWait">
-          <div class="container">
-            <div class="text-wrapper">
-              <a href="#" class="text c-fff t-100 t-w-800 t-lh-1-2 animationWait text-appear">RunnersFix</a>
-            </div>
-            <div class="teaser">
-              <div class="content">
-                <a href="#">
-                  <img src="img/cases/runner-teaser@2x.png">
-                </a>
-              </div>
+      </div>
+      <!---->
+      <div class="case runner animationWait">
+        <div class="container">
+          <div class="text-wrapper">
+            <a href="#" class="text c-fff t-100 t-w-800 t-lh-1-2 animationWait text-appear">RunnersFix</a>
+          </div>
+          <div class="teaser">
+            <div class="content">
+              <img src="img/cases/runner-teaser@2x.png">
             </div>
           </div>
         </div>
-        <!---->
-        <div class="case vacuum animationWait">
-          <div class="container">
-            <div class="text-wrapper">
-              <a href="#" class="text c-fff t-100 t-w-800 t-lh-1-2 animationWait text-appear">Vacuum</a>
-            </div>
-            <div class="teaser">
-              <div class="content">
-                <img src="img/cases/vacuum-teaser@2x.png">
-              </div>
+      </div>
+      <!---->
+      <div class="case vacuum animationWait">
+        <div class="container">
+          <div class="text-wrapper">
+            <a href="#" class="text c-fff t-100 t-w-800 t-lh-1-2 animationWait text-appear">Vacuum</a>
+          </div>
+          <div class="teaser">
+            <div class="content">
+              <img src="img/cases/vacuum-teaser@2x.png">
             </div>
           </div>
         </div>
-        <!---->
-        <div class="case vera animationWait">
-          <div class="container">
-            <div class="text-wrapper">
-              <a href="#" class="text c-fff t-100 t-w-800 t-lh-1-2 animationWait text-appear">Vera fund</a>
-            </div>
-            <div class="teaser">
-              <div class="content">
-                <img src="img/cases/vera-teaser@2x.png">
-              </div>
+      </div>
+      <!---->
+      <div class="case vera animationWait">
+        <div class="container">
+          <div class="text-wrapper">
+            <a href="#" class="text c-fff t-100 t-w-800 t-lh-1-2 animationWait text-appear">Vera fund</a>
+          </div>
+          <div class="teaser">
+            <div class="content">
+              <img src="img/cases/vera-teaser@2x.png">
             </div>
           </div>
         </div>
-        <!---->
-        <div class="case cover360 animationWait">
-          <div class="container">
-            <div class="text-wrapper">
-              <a href="#" class="text c-fff t-100 t-w-800 t-lh-1-2 animationWait text-appear">Cover 360°</a>
-            </div>
-            <div class="teaser">
-              <div class="content">
-                <img src="img/cases/360-teaser@2x.png">
-              </div>
+      </div>
+      <!---->
+      <div class="case cover360 animationWait">
+        <div class="container">
+          <div class="text-wrapper">
+            <a href="#" class="text c-fff t-100 t-w-800 t-lh-1-2 animationWait text-appear">Cover 360°</a>
+          </div>
+          <div class="teaser">
+            <div class="content">
+              <img src="img/cases/360-teaser@2x.png">
             </div>
           </div>
         </div>
+      </div>
     </div>
     <!---->
     <div class="container">
@@ -200,7 +284,8 @@
     </div>
     <div class="container left-padding animationWait fade-in">
       <div class="text t-19 c-0d0d0d t-lh-1-6 padding-30-0">
-        <p>We are a young creative design studio located in Lakeland, FL. We create, design, do research, we develop... but first we care! We care about every aspect of our work starting from developing a brand design strategy to every tiny design element in our projects. We struggle for a sense of self-satisfaction from our work and help brands share their unique stories with the customers.</p>
+        <p>We are a young creative design studio located in Lakeland, FL. We create, design, do research, we develop... but first we care! We care about every aspect of our work starting from developing a brand design strategy to every tiny design
+          element in our projects. We struggle for a sense of self-satisfaction from our work and help brands share their unique stories with the customers.</p>
       </div>
     </div>
     <!---->
@@ -224,60 +309,66 @@
         <div class="animationWait text-appear">
           <a href="https://www.behance.net/gallery/79241505/Megacity-of-thefuture" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="47.783" height="87.86" viewBox="0 0 47.783 87.86">
-                <defs>
-                    <linearGradient id="fsouz4yjpa" x1=".5" x2=".5" y1=".003" y2=".997" gradientUnits="objectBoundingBox">
-                        <stop offset=".206" stop-color="#1c0a00"/>
-                        <stop offset=".553" stop-color="#2a190d"/>
-                        <stop offset="1" stop-color="#413224"/>
-                    </linearGradient>
-                </defs>
-                <path fill="url(#fsouz4yjpa)" d="M0 0v87.86l23.969-13.487L47.783 87.86V0z"/>
-                <path fill="#ff7f18" d="M34.716 61.572c0-.154.077-.154.154-.154h2.62c.154 0 .154.077.154.154v13.1c0 .154-.077.154-.154.154h-2.62a.2.2 0 0 1-.231-.231l.077-13.025zm-.154-3.772a1.578 1.578 0 0 1 1.7-1.7 1.618 1.618 0 0 1 1.7 1.7 1.578 1.578 0 0 1-1.7 1.7 1.542 1.542 0 0 1-1.7-1.7zm-7.553 9.248c-.462-1.85-1.541-5.857-2-7.784-.385 1.927-1.233 5.241-1.927 7.784zm-4.547 2.7l-1.31 5.01c-.077.154-.077.154-.231.154h-2.467c-.154 0-.154-.077-.154-.231l4.7-16.5a4.416 4.416 0 0 0 .154-1.387c0-.154.077-.154.154-.154h3.468c.154 0 .154.077.154.154l5.241 17.88c.077.154 0 .231-.154.231h-2.773c-.154 0-.231-.077-.231-.154L27.78 69.9h-5.318z" transform="translate(-4.196 -12.864)"/>
+              <defs>
+                <linearGradient id="fsouz4yjpa" x1=".5" x2=".5" y1=".003" y2=".997" gradientUnits="objectBoundingBox">
+                  <stop offset=".206" stop-color="#1c0a00" />
+                  <stop offset=".553" stop-color="#2a190d" />
+                  <stop offset="1" stop-color="#413224" />
+                </linearGradient>
+              </defs>
+              <path fill="url(#fsouz4yjpa)" d="M0 0v87.86l23.969-13.487L47.783 87.86V0z" />
+              <path fill="#ff7f18"
+                d="M34.716 61.572c0-.154.077-.154.154-.154h2.62c.154 0 .154.077.154.154v13.1c0 .154-.077.154-.154.154h-2.62a.2.2 0 0 1-.231-.231l.077-13.025zm-.154-3.772a1.578 1.578 0 0 1 1.7-1.7 1.618 1.618 0 0 1 1.7 1.7 1.578 1.578 0 0 1-1.7 1.7 1.542 1.542 0 0 1-1.7-1.7zm-7.553 9.248c-.462-1.85-1.541-5.857-2-7.784-.385 1.927-1.233 5.241-1.927 7.784zm-4.547 2.7l-1.31 5.01c-.077.154-.077.154-.231.154h-2.467c-.154 0-.154-.077-.154-.231l4.7-16.5a4.416 4.416 0 0 0 .154-1.387c0-.154.077-.154.154-.154h3.468c.154 0 .154.077.154.154l5.241 17.88c.077.154 0 .231-.154.231h-2.773c-.154 0-.231-.077-.231-.154L27.78 69.9h-5.318z"
+                transform="translate(-4.196 -12.864)" />
             </svg>
           </a>
         </div>
         <div class="animationWait text-appear">
           <a href="https://www.behance.net/gallery/74116839/Collection-of-logos" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="47.783" height="87.86" viewBox="0 0 47.783 87.86">
-                <defs>
-                    <linearGradient id="linear-gradient" x1=".5" x2=".5" y1="13.14" y2="12.14" gradientUnits="objectBoundingBox">
-                        <stop offset="0" stop-color="#c4a45c"/>
-                        <stop offset=".75" stop-color="#c19f63"/>
-                    </linearGradient>
-                    <style>
-                        .cls-2{fill:#fff}
-                    </style>
-                </defs>
-                <g id="graphic-design" transform="translate(0)">
-                    <path id="Path_1450" fill="url(#linear-gradient)" d="M0 0v87.86l23.969-13.487L47.783 87.86V0z" transform="translate(0)"/>
-                    <path id="Path_1451" d="M29.347 75.052h-2.906a10.019 10.019 0 0 1-.324-1.811c-1.01 1.356-2.8 2.127-5.364 2.127-5.333 0-8.324-4.054-8.324-9.248 0-5.518 3.229-9.68 9.017-9.68 4.724 0 7.522 2.667 7.946 5.788h-3.968c-.378-1.225-1.333-2.7-4.031-2.7-3.784 0-4.855 3.175-4.855 6.4s1.225 6.3 4.879 6.3c3.383 0 4.023-2.374 4.023-4v-.185h-4.016v-3.287h7.923z" class="cls-2" transform="translate(-2.85 -12.942)"/>
-                    <path id="Path_1452" d="M38.84 66.327v-3.761h3.76c.054.316.108 1.68.108 2.428a4.491 4.491 0 0 1 4.432-2.744v3.661c-2.775-.085-4.432.663-4.432 4.455v6.027h-3.853z" class="cls-2" transform="translate(-8.906 -14.274)"/>
-                </g>
+              <defs>
+                <linearGradient id="linear-gradient" x1=".5" x2=".5" y1="13.14" y2="12.14" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#c4a45c" />
+                  <stop offset=".75" stop-color="#c19f63" />
+                </linearGradient>
+                <style>
+                  .cls-2 {
+                    fill: #fff
+                  }
+                </style>
+              </defs>
+              <g id="graphic-design" transform="translate(0)">
+                <path id="Path_1450" fill="url(#linear-gradient)" d="M0 0v87.86l23.969-13.487L47.783 87.86V0z" transform="translate(0)" />
+                <path id="Path_1451"
+                  d="M29.347 75.052h-2.906a10.019 10.019 0 0 1-.324-1.811c-1.01 1.356-2.8 2.127-5.364 2.127-5.333 0-8.324-4.054-8.324-9.248 0-5.518 3.229-9.68 9.017-9.68 4.724 0 7.522 2.667 7.946 5.788h-3.968c-.378-1.225-1.333-2.7-4.031-2.7-3.784 0-4.855 3.175-4.855 6.4s1.225 6.3 4.879 6.3c3.383 0 4.023-2.374 4.023-4v-.185h-4.016v-3.287h7.923z"
+                  class="cls-2" transform="translate(-2.85 -12.942)" />
+                <path id="Path_1452" d="M38.84 66.327v-3.761h3.76c.054.316.108 1.68.108 2.428a4.491 4.491 0 0 1 4.432-2.744v3.661c-2.775-.085-4.432.663-4.432 4.455v6.027h-3.853z" class="cls-2" transform="translate(-8.906 -14.274)" />
+              </g>
             </svg>
           </a>
         </div>
         <div class="animationWait text-appear">
           <a href="https://www.behance.net/gallery/74116839/Collection-of-logos" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="47.783" height="87.86" viewBox="0 0 47.783 87.86">
-                <g>
-                    <path fill="#0a3dff" d="M0 0v87.86l23.969-13.487L47.783 87.86V0z" transform="translate(0.001) translate(-0.001 0)"/>
-                    <text fill="#fff" font-family="Helvetica-Bold, Helvetica" font-size="24px" font-weight="700" transform="translate(0.001) translate(8.092 60.774)">
-                        <tspan x="0" y="0">Be</tspan>
-                    </text>
-                    <path fill="#fff" d="M0 0H9.248V2.312H0z" transform="translate(0.001) translate(29.286 43.93)"/>
-                </g>
+              <g>
+                <path fill="#0a3dff" d="M0 0v87.86l23.969-13.487L47.783 87.86V0z" transform="translate(0.001) translate(-0.001 0)" />
+                <text fill="#fff" font-family="Helvetica-Bold, Helvetica" font-size="24px" font-weight="700" transform="translate(0.001) translate(8.092 60.774)">
+                  <tspan x="0" y="0">Be</tspan>
+                </text>
+                <path fill="#fff" d="M0 0H9.248V2.312H0z" transform="translate(0.001) translate(29.286 43.93)" />
+              </g>
             </svg>
           </a>
         </div>
         <div class="animationWait text-appear">
           <a href="https://www.behance.net/gallery/78454805/Left-Right" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="47.783" height="87.86" viewBox="0 0 47.783 87.86">
-                <g>
-                    <path fill="#c3a15f" d="M0 0v87.86l23.969-13.487L47.783 87.86V0z" transform="translate(0.001) translate(-0.001)"/>
-                    <text fill="#fff" font-family="Helvetica-Bold, Helvetica" font-size="25px" font-weight="700" transform="translate(0.001) translate(8.862 61.774)">
-                        <tspan x="0" y="0">Fa</tspan>
-                    </text>
-                </g>
+              <g>
+                <path fill="#c3a15f" d="M0 0v87.86l23.969-13.487L47.783 87.86V0z" transform="translate(0.001) translate(-0.001)" />
+                <text fill="#fff" font-family="Helvetica-Bold, Helvetica" font-size="25px" font-weight="700" transform="translate(0.001) translate(8.862 61.774)">
+                  <tspan x="0" y="0">Fa</tspan>
+                </text>
+              </g>
             </svg>
           </a>
         </div>
@@ -291,7 +382,8 @@
         </div>
       </div>
       <div class="text t-19 c-0d0d0d t-lh-1-6 animationWait fade-in padding-30-0">
-        <p>In the early 2000s, we were sitting at the old Windows 98 computer at the University, spending the entire academic hour looking for an ideal position of anything with one pixel in difference. There were the first symptoms of perfectionism and since then nothing has changed. Today we have modern computers, the latest versions of software, decent experience but continuously searching for the ideal is still taking place.</p>
+        <p>In the early 2000s, we were sitting at the old Windows 98 computer at the University, spending the entire academic hour looking for an ideal position of anything with one pixel in difference. There were the first symptoms of perfectionism
+          and since then nothing has changed. Today we have modern computers, the latest versions of software, decent experience but continuously searching for the ideal is still taking place.</p>
       </div>
     </div>
     <div class="container left-padding animationWait fade-in">
@@ -300,15 +392,17 @@
         <div class="col">
           <!---->
           <div class="text t-19 c-0d0d0d t-lh-1-6 animationWait fade-in">
-            <p>We are very sensitive to visual details, color schemes, and typography. We are keen on UI/UX design, illustration, branding, and product design. But we also enjoy developing ourselves in fields like photography, social media design and involve them in our projects.</p>
+            <p>We are very sensitive to visual details, color schemes, and typography. We are keen on UI/UX design, illustration, branding, and product design. But we also enjoy developing ourselves in fields like photography, social media design and
+              involve them in our projects.</p>
           </div>
           <!---->
           <div class="person anna animationWait fade-in">
             <a target="_blank" href="https://www.instagram.com/anuta_f/">
               <svg xmlns="http://www.w3.org/2000/svg" width="31.484" height="31.484" viewBox="0 0 31.484 31.484">
-                  <path d="M22.8 0H8.688A8.7 8.7 0 0 0 0 8.689V22.8a8.7 8.7 0 0 0 8.688 8.689H22.8a8.7 8.7 0 0 0 8.684-8.689V8.689A8.7 8.7 0 0 0 22.8 0zm5.9 22.8a5.9 5.9 0 0 1-5.9 5.9H8.688a5.9 5.9 0 0 1-5.895-5.9V8.689a5.9 5.9 0 0 1 5.895-5.9H22.8a5.9 5.9 0 0 1 5.9 5.9V22.8z"/>
-                  <path d="M49.081 40.97a8.113 8.113 0 1 0 8.113 8.113 8.122 8.122 0 0 0-8.113-8.113zm0 13.431a5.319 5.319 0 1 1 5.319-5.318 5.325 5.325 0 0 1-5.319 5.317z" transform="translate(-33.339 -33.34)"/>
-                  <path d="M120.97 28.251a2.047 2.047 0 1 0 1.449.6 2.057 2.057 0 0 0-1.449-.6z" transform="translate(-96.774 -22.99)"/>
+                <path
+                  d="M22.8 0H8.688A8.7 8.7 0 0 0 0 8.689V22.8a8.7 8.7 0 0 0 8.688 8.689H22.8a8.7 8.7 0 0 0 8.684-8.689V8.689A8.7 8.7 0 0 0 22.8 0zm5.9 22.8a5.9 5.9 0 0 1-5.9 5.9H8.688a5.9 5.9 0 0 1-5.895-5.9V8.689a5.9 5.9 0 0 1 5.895-5.9H22.8a5.9 5.9 0 0 1 5.9 5.9V22.8z" />
+                <path d="M49.081 40.97a8.113 8.113 0 1 0 8.113 8.113 8.122 8.122 0 0 0-8.113-8.113zm0 13.431a5.319 5.319 0 1 1 5.319-5.318 5.325 5.325 0 0 1-5.319 5.317z" transform="translate(-33.339 -33.34)" />
+                <path d="M120.97 28.251a2.047 2.047 0 1 0 1.449.6 2.057 2.057 0 0 0-1.449-.6z" transform="translate(-96.774 -22.99)" />
               </svg>
             </a>
             <!---->
@@ -339,9 +433,10 @@
           <div class="person sveta animationWait fade-in">
             <a target="_blank" href="https://www.instagram.com/_sweest_/">
               <svg xmlns="http://www.w3.org/2000/svg" width="31.484" height="31.484" viewBox="0 0 31.484 31.484">
-                  <path d="M22.8 0H8.688A8.7 8.7 0 0 0 0 8.689V22.8a8.7 8.7 0 0 0 8.688 8.689H22.8a8.7 8.7 0 0 0 8.684-8.689V8.689A8.7 8.7 0 0 0 22.8 0zm5.9 22.8a5.9 5.9 0 0 1-5.9 5.9H8.688a5.9 5.9 0 0 1-5.895-5.9V8.689a5.9 5.9 0 0 1 5.895-5.9H22.8a5.9 5.9 0 0 1 5.9 5.9V22.8z"/>
-                  <path d="M49.081 40.97a8.113 8.113 0 1 0 8.113 8.113 8.122 8.122 0 0 0-8.113-8.113zm0 13.431a5.319 5.319 0 1 1 5.319-5.318 5.325 5.325 0 0 1-5.319 5.317z" transform="translate(-33.339 -33.34)"/>
-                  <path d="M120.97 28.251a2.047 2.047 0 1 0 1.449.6 2.057 2.057 0 0 0-1.449-.6z" transform="translate(-96.774 -22.99)"/>
+                <path
+                  d="M22.8 0H8.688A8.7 8.7 0 0 0 0 8.689V22.8a8.7 8.7 0 0 0 8.688 8.689H22.8a8.7 8.7 0 0 0 8.684-8.689V8.689A8.7 8.7 0 0 0 22.8 0zm5.9 22.8a5.9 5.9 0 0 1-5.9 5.9H8.688a5.9 5.9 0 0 1-5.895-5.9V8.689a5.9 5.9 0 0 1 5.895-5.9H22.8a5.9 5.9 0 0 1 5.9 5.9V22.8z" />
+                <path d="M49.081 40.97a8.113 8.113 0 1 0 8.113 8.113 8.122 8.122 0 0 0-8.113-8.113zm0 13.431a5.319 5.319 0 1 1 5.319-5.318 5.325 5.325 0 0 1-5.319 5.317z" transform="translate(-33.339 -33.34)" />
+                <path d="M120.97 28.251a2.047 2.047 0 1 0 1.449.6 2.057 2.057 0 0 0-1.449-.6z" transform="translate(-96.774 -22.99)" />
               </svg>
             </a>
             <!---->
@@ -371,7 +466,7 @@
     </div>
     <div class="container team left-padding animationWait fade-in">
       <!---->
-       <div class="text t-19 c-0d0d0d t-lh-1-6 animationWait fade-in padding-30-0">
+      <div class="text t-19 c-0d0d0d t-lh-1-6 animationWait fade-in padding-30-0">
         <p>No matter how talented we are, we still need help. So, meet our small closely-knit team.</p>
       </div>
       <!---->
@@ -468,7 +563,7 @@
     </div>
   </div>
   <!-- REVIEWS -->
-  <div id="reviews"class="section">
+  <div id="reviews" class="section">
     <link rel="stylesheet" href="css/reviews.css?v=1.0">
     <div class="container">
       <!---->
@@ -488,7 +583,8 @@
     <div id="reviews-list" class="carousel animationWait fade-in">
       <div class="quotes" data-text='drag' data-cursor='round'>
         <div class="text  t-19 t-lh-1-6">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
         <div class="name t-19 t-w-800 t-lh-1-2">
           Igor Bolshakov
@@ -502,7 +598,8 @@
       </div>
       <div class="quotes" data-text='drag' data-cursor='round'>
         <div class="text t-19 t-lh-1-6">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
         <div class="name t-19 t-w-800 t-lh-1-2">
           Igor Bolshakov
@@ -516,7 +613,8 @@
       </div>
       <div class="quotes" data-text='drag' data-cursor='round'>
         <div class="text t-19 t-lh-1-6">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
         <div class="name t-19 t-w-800 t-lh-1-2">
           Igor Bolshakov
@@ -530,7 +628,8 @@
       </div>
       <div class="quotes" data-text='drag' data-cursor='round'>
         <div class="text t-19 t-lh-1-6">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
         <div class="name t-19 t-w-800 t-lh-1-2">
           Igor Bolshakov
@@ -576,7 +675,9 @@
                   <a class="t-14 c-fff t-w-800 t-lh-2 t-uppr" target="_blank" href="https://www.instagram.com/a.s.crew/">
                     <span class="text">Instagram</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16.226" height="16.227">
-                        <path data-name="Path 16976" d="M15.615.613A2 2 0 0 0 14.147 0H2.082A2 2 0 0 0 .614.613 2 2 0 0 0 0 2.081v12.064a2 2 0 0 0 .613 1.468 2 2 0 0 0 1.468.613h12.065a2.092 2.092 0 0 0 2.081-2.081V2.081a2 2 0 0 0-.612-1.468zM5.827 5.847a3.188 3.188 0 0 1 2.3-.924 3.2 3.2 0 0 1 2.308.924 2.994 2.994 0 0 1 .956 2.234 2.993 2.993 0 0 1-.956 2.234 3.2 3.2 0 0 1-2.308.925 3.188 3.188 0 0 1-2.3-.925 2.993 2.993 0 0 1-.956-2.234 2.994 2.994 0 0 1 .956-2.234zm8.562 7.865a.616.616 0 0 1-.19.459.63.63 0 0 1-.454.185H2.452a.632.632 0 0 1-.644-.644V6.867H3.3a4.549 4.549 0 0 0-.211 1.384 4.639 4.639 0 0 0 1.479 3.46 4.936 4.936 0 0 0 3.56 1.431 5.078 5.078 0 0 0 2.536-.655 4.932 4.932 0 0 0 1.838-1.78 4.681 4.681 0 0 0 .676-2.456 4.55 4.55 0 0 0-.211-1.384h1.423v6.846zm0-9.434a.722.722 0 0 1-.729.729h-1.838a.721.721 0 0 1-.729-.729V2.535a.709.709 0 0 1 .211-.512.7.7 0 0 1 .518-.217h1.838a.7.7 0 0 1 .518.217.709.709 0 0 1 .212.512z" transform="translate(-.001)" style="fill:#5a5a5a"/>
+                      <path data-name="Path 16976"
+                        d="M15.615.613A2 2 0 0 0 14.147 0H2.082A2 2 0 0 0 .614.613 2 2 0 0 0 0 2.081v12.064a2 2 0 0 0 .613 1.468 2 2 0 0 0 1.468.613h12.065a2.092 2.092 0 0 0 2.081-2.081V2.081a2 2 0 0 0-.612-1.468zM5.827 5.847a3.188 3.188 0 0 1 2.3-.924 3.2 3.2 0 0 1 2.308.924 2.994 2.994 0 0 1 .956 2.234 2.993 2.993 0 0 1-.956 2.234 3.2 3.2 0 0 1-2.308.925 3.188 3.188 0 0 1-2.3-.925 2.993 2.993 0 0 1-.956-2.234 2.994 2.994 0 0 1 .956-2.234zm8.562 7.865a.616.616 0 0 1-.19.459.63.63 0 0 1-.454.185H2.452a.632.632 0 0 1-.644-.644V6.867H3.3a4.549 4.549 0 0 0-.211 1.384 4.639 4.639 0 0 0 1.479 3.46 4.936 4.936 0 0 0 3.56 1.431 5.078 5.078 0 0 0 2.536-.655 4.932 4.932 0 0 0 1.838-1.78 4.681 4.681 0 0 0 .676-2.456 4.55 4.55 0 0 0-.211-1.384h1.423v6.846zm0-9.434a.722.722 0 0 1-.729.729h-1.838a.721.721 0 0 1-.729-.729V2.535a.709.709 0 0 1 .211-.512.7.7 0 0 1 .518-.217h1.838a.7.7 0 0 1 .518.217.709.709 0 0 1 .212.512z"
+                        transform="translate(-.001)" style="fill:#5a5a5a" />
                     </svg>
                   </a>
                 </div>
@@ -585,7 +686,9 @@
                   <a class="t-14 c-fff t-w-800 t-lh-2 t-uppr" target="_blank" href="https://www.facebook.com/hey.crew.design/">
                     <span class="text">Facebook</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="7.978" height="15.865">
-                        <path data-name="Path 16960" d="M7.47 3.062c0-.1.014-.312.041-.639a2.383 2.383 0 0 1 .375-1.03A2.925 2.925 0 0 1 8.958.426 4.357 4.357 0 0 1 11.1 0h2.62v2.859H11.8a.785.785 0 0 0-.527.212.579.579 0 0 0-.24.4v1.778h2.687c-.028.348-.059.687-.095 1.014l-.106.864q-.064.438-.128.812h-2.379v7.927H7.47V7.938H5.742V5.249H7.47z" transform="translate(-5.742)" style="fill:#5a5a5a"/>
+                      <path data-name="Path 16960"
+                        d="M7.47 3.062c0-.1.014-.312.041-.639a2.383 2.383 0 0 1 .375-1.03A2.925 2.925 0 0 1 8.958.426 4.357 4.357 0 0 1 11.1 0h2.62v2.859H11.8a.785.785 0 0 0-.527.212.579.579 0 0 0-.24.4v1.778h2.687c-.028.348-.059.687-.095 1.014l-.106.864q-.064.438-.128.812h-2.379v7.927H7.47V7.938H5.742V5.249H7.47z"
+                        transform="translate(-5.742)" style="fill:#5a5a5a" />
                     </svg>
                   </a>
                 </div>
@@ -594,11 +697,15 @@
                   <a class="t-14 c-fff t-w-800 t-lh-2 t-uppr" target="_blank" href="https://www.behance.net/AScrew">
                     <span class="text">BEhance</span>
                     <svg id="behance-logo" xmlns="http://www.w3.org/2000/svg" width="25.052" height="15.866">
-                        <g id="Group_2596" data-name="Group 2596">
-                            <path style="fill:#5a5a5a" id="Path_16974" data-name="Path 16974" class="cls-1" d="M10.111 24.657a2.7 2.7 0 0 0 2.37-2.957c0-2.78-1.94-4.137-4.4-4.137H0V33.1h8.084s4.935.156 4.935-4.586c.001.001.216-3.857-2.908-3.857zm-6.549-4.331h4.523s1.1 0 1.1 1.616-.648 1.851-1.385 1.851H3.562zM7.876 30.34H3.562v-4.153h4.522s1.638-.021 1.638 2.134c.001 1.797-1.197 2.001-1.846 2.019z" transform="translate(0 -17.564)"/>
-                            <path style="fill:#5a5a5a" id="Rectangle_949" data-name="Rectangle 949" class="cls-1" transform="translate(16.26 .915)" d="M0 0h6.41v1.913H0z"/>
-                            <path style="fill:#5a5a5a" id="Path_16975" data-name="Path 16975" class="cls-1" d="M58.088 32.682c-5.975 0-5.969 5.969-5.969 5.969a5.512 5.512 0 0 0 5.97 5.939s5.317.3 5.317-4.132H60.67s.091 1.671-2.491 1.671a2.527 2.527 0 0 1-2.734-2.7H63.5s.876-6.747-5.412-6.747zm2.43 4.67h-5.1a2.778 2.778 0 0 1 2.734-2.395 2.312 2.312 0 0 1 2.366 2.395z" transform="translate(-38.485 -28.729)"/>
-                        </g>
+                      <g id="Group_2596" data-name="Group 2596">
+                        <path style="fill:#5a5a5a" id="Path_16974" data-name="Path 16974" class="cls-1"
+                          d="M10.111 24.657a2.7 2.7 0 0 0 2.37-2.957c0-2.78-1.94-4.137-4.4-4.137H0V33.1h8.084s4.935.156 4.935-4.586c.001.001.216-3.857-2.908-3.857zm-6.549-4.331h4.523s1.1 0 1.1 1.616-.648 1.851-1.385 1.851H3.562zM7.876 30.34H3.562v-4.153h4.522s1.638-.021 1.638 2.134c.001 1.797-1.197 2.001-1.846 2.019z"
+                          transform="translate(0 -17.564)" />
+                        <path style="fill:#5a5a5a" id="Rectangle_949" data-name="Rectangle 949" class="cls-1" transform="translate(16.26 .915)" d="M0 0h6.41v1.913H0z" />
+                        <path style="fill:#5a5a5a" id="Path_16975" data-name="Path 16975" class="cls-1"
+                          d="M58.088 32.682c-5.975 0-5.969 5.969-5.969 5.969a5.512 5.512 0 0 0 5.97 5.939s5.317.3 5.317-4.132H60.67s.091 1.671-2.491 1.671a2.527 2.527 0 0 1-2.734-2.7H63.5s.876-6.747-5.412-6.747zm2.43 4.67h-5.1a2.778 2.778 0 0 1 2.734-2.395 2.312 2.312 0 0 1 2.366 2.395z"
+                          transform="translate(-38.485 -28.729)" />
+                      </g>
                     </svg>
 
                   </a>
@@ -608,7 +715,9 @@
                   <a class="t-14 c-fff t-w-800 t-lh-2 t-uppr" target="_blank" href="https://www.etsy.com/shop/AScrew?ref=profile_header">
                     <span class="text">etsy store</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="13.994" height="15.865">
-                        <path d="m33.685 11.227-.541 1.741a2.219 2.219 0 0 1-2.119 1.56H26.88a1.114 1.114 0 0 1-1.114-1.114V8.736h3a1.426 1.426 0 0 1 1.426 1.426v.367a.2.2 0 0 0 .2.2h.615a.2.2 0 0 0 .2-.2V5.13a.2.2 0 0 0-.2-.2h-.617a.2.2 0 0 0-.2.2v.575a1.426 1.426 0 0 1-1.426 1.426h-3v-4.68a1.114 1.114 0 0 1 1.116-1.114h3.937a1.842 1.842 0 0 1 1.842 1.842v1.11a.2.2 0 0 0 .2.2h.72a.2.2 0 0 0 .2-.182l.3-3.813A.455.455 0 0 0 33.622 0h-12.5a.314.314 0 0 0-.322.314v.708a.314.314 0 0 0 .314.314h.8a1.114 1.114 0 0 1 1.114 1.114v10.964a1.114 1.114 0 0 1-1.114 1.114h-.8a.314.314 0 0 0-.314.314v.708a.314.314 0 0 0 .314.314h12.6a.456.456 0 0 0 .45-.388l.621-4.162a.2.2 0 0 0-.2-.227h-.725a.2.2 0 0 0-.175.14z" transform="translate(-20.803)" style="fill:#5a5a5a"/>
+                      <path
+                        d="m33.685 11.227-.541 1.741a2.219 2.219 0 0 1-2.119 1.56H26.88a1.114 1.114 0 0 1-1.114-1.114V8.736h3a1.426 1.426 0 0 1 1.426 1.426v.367a.2.2 0 0 0 .2.2h.615a.2.2 0 0 0 .2-.2V5.13a.2.2 0 0 0-.2-.2h-.617a.2.2 0 0 0-.2.2v.575a1.426 1.426 0 0 1-1.426 1.426h-3v-4.68a1.114 1.114 0 0 1 1.116-1.114h3.937a1.842 1.842 0 0 1 1.842 1.842v1.11a.2.2 0 0 0 .2.2h.72a.2.2 0 0 0 .2-.182l.3-3.813A.455.455 0 0 0 33.622 0h-12.5a.314.314 0 0 0-.322.314v.708a.314.314 0 0 0 .314.314h.8a1.114 1.114 0 0 1 1.114 1.114v10.964a1.114 1.114 0 0 1-1.114 1.114h-.8a.314.314 0 0 0-.314.314v.708a.314.314 0 0 0 .314.314h12.6a.456.456 0 0 0 .45-.388l.621-4.162a.2.2 0 0 0-.2-.227h-.725a.2.2 0 0 0-.175.14z"
+                        transform="translate(-20.803)" style="fill:#5a5a5a" />
                     </svg>
                   </a>
                 </div>
@@ -641,11 +750,15 @@
       <div class="row">
         <!---->
         <div class="copyright">
-          <span class="t-12 c-5a5a5a">&copy; 2021 AS-crew,</span> <span class="t-12 c-fff">build with</span><svg class="heart" xmlns="http://www.w3.org/2000/svg" width="8.771" height="8.145" viewBox="0 0 8.771 8.145"><path fill="#c91559" d="M5.473.217A.862.862 0 0 0 5.848.07c2.479-1.576 4.014-3.422 4.014-5.3a2.526 2.526 0 0 0-2.479-2.7 2.125 2.125 0 0 0-1.91 1.2 2.127 2.127 0 0 0-1.9-1.2 2.526 2.526 0 0 0-2.479 2.7C1.09-3.352 2.625-1.506 5.1.07a.92.92 0 0 0 .373.147z" transform="translate(-1.09 7.928)"/></svg><span class="t-12 c-fff">by us</span>
+          <span class="t-12 c-5a5a5a">&copy; 2021 AS-crew,</span> <span class="t-12 c-fff">build with</span><svg class="heart" xmlns="http://www.w3.org/2000/svg" width="8.771" height="8.145" viewBox="0 0 8.771 8.145">
+            <path fill="#c91559"
+              d="M5.473.217A.862.862 0 0 0 5.848.07c2.479-1.576 4.014-3.422 4.014-5.3a2.526 2.526 0 0 0-2.479-2.7 2.125 2.125 0 0 0-1.91 1.2 2.127 2.127 0 0 0-1.9-1.2 2.526 2.526 0 0 0-2.479 2.7C1.09-3.352 2.625-1.506 5.1.07a.92.92 0 0 0 .373.147z"
+              transform="translate(-1.09 7.928)" /></svg><span class="t-12 c-fff">by us</span>
         </div>
       </div>
       <!---->
     </div>
   </div>
 </body>
+
 </html>

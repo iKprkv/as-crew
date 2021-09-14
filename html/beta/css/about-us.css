@@ -67,12 +67,12 @@
   position: relative;
 }
 
-/* #about-us .person.sveta {
-  margin-top: 200px;
-}*/
+  #about-us .person.sveta {
+    margin-bottom: -80px;
+  }
 #about-us .person.anna {
-  margin-top: -50px;
-  margin-bottom: 120px;
+  margin-top: -100px;
+  margin-bottom: 160px;
 }
 
 #about-us .person a {
@@ -149,6 +149,16 @@
     padding: 18px 0 6px 0;
 }
 @media screen and (max-width: 1440px) {
+  #about-us .person.anna {
+    margin-bottom: 120px;
+  }
+  #about-us .person.sveta {
+    margin-bottom: -130px;
+  }
+  #about-us .person.sveta .effect {
+    top: 32%;
+    left: 33%;
+  }
   #about-us {
     padding: 63px 0 10px 0;
   }
@@ -220,8 +230,15 @@
   #about-us .title {
     flex-wrap: wrap;
   }
+  #about-us .person.sveta .effect {
+    top: 31%;
+    left: 32%;
+  }
 }
 @media screen and (max-width: 900px) {
+  #about-us .title .years {
+    padding: 0 10vw 0 0;
+  }
   #about-us .teammates .helper {
     padding: 0 0px 0 25px;
     margin: 0;
@@ -277,6 +294,7 @@
     order: -1;
     width: 100%;
     padding: 0 0 24px 0;
+    line-height: 1;
   }
   #about-us .person {
     max-width: 70vw;
