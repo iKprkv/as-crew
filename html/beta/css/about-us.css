@@ -148,6 +148,12 @@
 #about-us .teammates .name {
     padding: 18px 0 6px 0;
 }
+@media screen and (min-width: 1440px) {
+  #about-us .person.anna {
+    margin-top: -50px;
+    margin-bottom: 140px;
+  }
+}
 @media screen and (max-width: 1440px) {
   #about-us .person.anna {
     margin-bottom: 120px;
