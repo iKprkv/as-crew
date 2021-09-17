@@ -12,6 +12,16 @@ if (window.innerWidth <= 900) {
     position = scroll;
   });
 }
+$(document).ready(function() {
+  if (window.innerWidth <= 900) {
+    $("#home .secondary-nav").on('click', function(){
+      $(this).toggleClass('expanded')
+    });    
+  }
+  $("#home .secondary-nav .link").on('click', function(){
+    $(this).addClass('active').siblings().removeClass('active');
+  });
+})
 $(window).bind("load", function () {
   var nav = $('#home .nav'),
   darkElementsPx = {};
