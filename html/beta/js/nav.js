@@ -1,4 +1,17 @@
-//$(document).ready(function() {
+if (window.innerWidth <= 900) {
+  var position = $(window).scrollTop();
+  var stopNav = 0;
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if(scroll > position) {
+        $('.nav').css('position','absolute').removeClass('fade-in').css('top',stopNav+'px');
+    } else {
+         stopNav = $(window).scrollTop();
+         $('.nav').css('position','fixed').addClass('fade-in').css('top',0);
+    }
+    position = scroll;
+  });
+}
 $(window).bind("load", function () {
   var nav = $('#home .nav'),
   darkElementsPx = {};
@@ -14,6 +27,7 @@ $(window).bind("load", function () {
     }
     console.log(darkElementsPx)
   }
+
 
   checkDarkPosition();
 
@@ -104,29 +118,9 @@ $(window).bind("load", function () {
         checkDarkPosition();
       }
     }
-     // for (var i = 0; i < darkElements.length; i++) {
-     //    if (point >= darkElementsPx[i][0] && point <= (darkElementsPx[i][0]+darkElementsPx[i][1])) {
-     //      console.log(i);
-     //      if (nav.hasClass('invert')) {
-     //
-     //      }
-     //      else {
-     //        nav.addClass('invert')
-     //      }
-     //    }
-     //
-     // }
-
-    // if (point >= ) {
-    //
-    // }
   }
-  //navInvert()
-  //console.log(darkElementsPx)
 
   $(window).scroll(function (event) {
-    var scroll = $(window).scrollTop();
-    $('.nav .menu').text(scroll);
     navInvert()
-});
+  });
 })
