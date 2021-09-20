@@ -1,0 +1,22 @@
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d0d0d;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 2;
+}
+.popup .container {
+  max-width: 770px;
+}
+@media screen and (max-width: 1440px) {
+  .popup .container {
+    padding: 0 0;
+    box-sizing: border-box;
+  }
+}

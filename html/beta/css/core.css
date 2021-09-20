@@ -2,6 +2,10 @@ body {
   background-color: #0d0d0d;
   color: #fff;
 }
+body.fixed {
+  max-height: 100vh;
+  overflow: hidden;
+}
 /* links */
   a {
     position: relative;
