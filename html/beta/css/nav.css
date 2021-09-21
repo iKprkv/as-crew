@@ -12,7 +12,8 @@
   padding: 40px 100px;
   z-index: 2;
   box-sizing: border-box;
-  animation-duration: 0.2s !important;
+  animation-delay: 0.2s;
+  animation-duration: 0.3s !important;
 }
 #home .nav.invert .as-logo span,
 #home .nav.invert .popup-menu .line {

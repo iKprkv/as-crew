@@ -37,10 +37,10 @@
   max-height: 80vh;
   flex-grow: 1;
 }
-.popup .p-nav span {
+.popup .p-nav .text {
   display: inline-block;
 }
-.popup .p-nav span:hover {
+.popup .p-nav .text:hover {
   color: #c91559;
   cursor: pointer;
 }
@@ -85,14 +85,8 @@
     line-height: 1.2;
   }
   .popup .container {
-    max-height: 70vh;
+    max-height: 75vh;
   }
-  /* .popup .p-nav {
-    padding: 150px 0 0 0;
-  }
-  .popup .columns {
-    padding: 0 0 100px 0;
-  } */
 }
 @media screen and (max-width: 910px) {
   .popup {

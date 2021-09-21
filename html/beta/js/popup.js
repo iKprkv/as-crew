@@ -26,8 +26,12 @@ $(document).ready(function() {
       }, 350); //2000
     }
   })
-
-  $("#home .nav .p-nav").on('click', function(){
+  $("#home .popup .p-nav span.text").on('click', function(){
+    var link = $(this).attr('data-go')
+    console.log(link);
     $("#home .nav .popup-menu").click();
+      $('html, body').animate({
+        scrollTop: $("#"+link).offset().top
+      }, 100);
   })
 })
