@@ -29,9 +29,16 @@ $(document).ready(function() {
   $("#home .popup .p-nav span.text").on('click', function(){
     var link = $(this).attr('data-go')
     console.log(link);
-    $("#home .nav .popup-menu").click();
-      $('html, body').animate({
-        scrollTop: $("#"+link).offset().top
-      }, 100);
+
+      // $('html, body').animate({
+      //   scrollTop: $("#"+link).offset().top+50
+      // }, 200);
+    $('html, body').animate({
+      scrollTop: $("#"+link).offset().top
+    }, 400);
+    setTimeout(function() {
+      $("#home .nav .popup-menu").click();
+    }, 200); //2000
+      //$("#"+link).find('.animationWait').removeClass('animationWait')
   })
 })
