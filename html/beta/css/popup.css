@@ -37,14 +37,12 @@
   max-height: 80vh;
   flex-grow: 1;
 }
-/* .popup .p-nav {
-  padding: 10vh 0 0 0;
+.popup .p-nav span {
+  display: inline-block;
 }
-.popup .columns {
-  padding: 0 0 15vh 0;
-} */
-.popup .p-nav a:hover {
+.popup .p-nav span:hover {
   color: #c91559;
+  cursor: pointer;
 }
 .popup .p-nav .text-wrapper:nth-child(1) .anim {
   animation-delay: 0.25s;
