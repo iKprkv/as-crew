@@ -80,7 +80,7 @@
     max-width: 100%;
     box-sizing: border-box;
   }
-  .popup .p-nav a.t-100 {
+  .popup .p-nav .t-100 {
     font-size: 80px;
     line-height: 1.2;
   }
@@ -102,7 +102,7 @@
     padding: 0px 24px;
     max-height: 85vh;
   }
-  .popup .p-nav a.t-100{
+  .popup .p-nav .t-100{
     font-size: 43px;
     font-weight: 800;
     font-stretch: normal;
