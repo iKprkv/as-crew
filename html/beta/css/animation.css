@@ -1,8 +1,15 @@
 .animationWait,
 .animationWait:after,
-.animationWait:before  {
+.animationWait:before,
+.animationWait *  {
   -webkit-animation: none !important;
   animation: none !important;
+}
+.hold,
+.hold:after,
+.hold:before  {
+    -webkit-animation: none !important;
+    animation: none !important;
 }
 .animationDelay {
   /*-webkit-animation-delay: 0.4s !important;

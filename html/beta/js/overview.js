@@ -19,7 +19,7 @@ $(document).ready(function() {
       },200);
     }
     //
-    setTimeout(function(){
+    setTimeout(function() {
       if (window.innerWidth <= 900) {
         $( "#overview .words .animationDelay" ).each(function(e) {
           $(this).addClass('animationWait');
@@ -36,6 +36,6 @@ $(document).ready(function() {
           $('#overview .words .text.'+data).css('display','flex').siblings().hide();
         }, 200);
       });
-    },200);
+    }, 200);
   });
 })

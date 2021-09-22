@@ -20,12 +20,6 @@
 .popup .columns {
   flex-wrap: wrap;
 }
-.popup .hold,
-.popup .hold:after,
-.popup .hold:before  {
-    -webkit-animation: none !important;
-    animation: none !important;
-}
 .popup .fade-in {
   animation-delay: 0.3s;
 }
