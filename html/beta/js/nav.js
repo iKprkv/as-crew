@@ -6,11 +6,15 @@ if (window.innerWidth <= 900) {
   });
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
+    console.log(position)
     if(scroll > position) {
-      $('.nav').css('position','absolute').removeClass('slide-in-top').css('top',stopNav+'px');
+      $('.nav').css('position','absolute').removeClass('fade-in').css('top',stopNav+'px');
     } else {
       stopNav = $(window).scrollTop();
-      $('.nav').css('position','fixed').addClass('slide-in-top').css('top',0);
+      $('.nav').css('position','fixed').addClass('fade-in').css('top',0);
+    }
+    if (scroll <= $('.nav').height()) {
+      $('.nav').css('position','absolute').css('top',0);
     }
     position = scroll;
   });

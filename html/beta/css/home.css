@@ -105,6 +105,23 @@
   #home .video-layer {
     background: red;
   }
+  #home .scroll-text.t-14 {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+  }
+  #home .scroll-text span {
+    display: none;
+  }
+  #home .scroll-text.t-14:after {
+    content: '';
+    width: 6.2px;
+    height: 4px;
+    display: block;
+    margin: 7px auto 0 auto;
+    background-image: url(../img/svg/arrow-down.svg);
+  }
 
 }
 @media (max-width: 800px) and (orientation: landscape) {
