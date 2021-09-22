@@ -60,17 +60,41 @@
 #home .title-words .simple {
   text-align: right;
 }
-#home .title-words .text-wrapper:nth-child(4) .text-appear {
-  animation-delay: 0.25s;
-}
-#home .title-words .text-wrapper:nth-child(3) .text-appear {
+#home .title-words .text-wrapper .fade-in {
   animation-delay: 0.2s;
 }
-#home .title-words .text-wrapper:nth-child(2) .text-appear {
+/* #home .title-words .text-wrapper:nth-child(5) .fade-in {
+  animation-delay: 0.3s;
+}
+#home .title-words .text-wrapper:nth-child(4) .fade-in {
+  animation-delay: 0.3s;
+}
+#home .title-words .text-wrapper:nth-child(3) .fade-in {
+  animation-delay: 0.2s;
+}
+#home .title-words .text-wrapper:nth-child(2) .fade-in {
   animation-delay: 0.1s;
 }
-#home .title-words .text-wrapper:nth-child(1) .text-appear {
+#home .title-words .text-wrapper:nth-child(1) .fade-in {
   animation-delay: 0s;
+} */
+#home .title-words .splash {
+  position: relative;
+  z-index: 2;
+  animation-delay: 0.2s;
+  animation-duration: 0.2s;
+}
+#home .title-words .splash:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1058px;
+  height: 611px;
+  right: 200px;
+  top: -55px;
+  background-size: 100%;
+  background-image: url(../img/splash@2x.png);
+
 }
 @media screen and (max-width: 1920px) {
   #home .title-words {
