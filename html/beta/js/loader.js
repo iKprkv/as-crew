@@ -29,7 +29,7 @@ $(window).bind("load", function() {
     $('.waiting-for-content').fadeOut(function() {
       $(this).remove()
     });
-    $("#home .hold").removeClass('hold');
+    $("#home .title-words .hold").removeClass('hold');
     //$('.animationWait').each(function( index ) {
     //$(this).removeClass('animationWait');
     //});
