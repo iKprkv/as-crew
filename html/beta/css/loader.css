@@ -78,24 +78,19 @@
   height: 100vh;
   background-color: #0d0d0d;
   z-index: 6;
-  top: 0;
   left: 0;
+  bottom: 0;
   overflow: hidden;
+  transition: 0.5s transform ease;
 }
-.waiting-for-content:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: -100%;
-  right: 0;
-  left: 0;
-  width: 1000vw;
-  height: 100vh;
-  background-color: #fff;
-  transition: 0.7s top ease;
+.waiting-for-content.done {
+
 }
-.waiting-for-content.done:after {
-  top: 0;
+.waiting-for-content.done.hide {
+  transform: translateY(100vh);
+}
+.waiting-for-content.done .group {
+	opacity: 0;
 }
 .waiting-for-content .group {
   display: flex;
@@ -104,6 +99,7 @@
   flex-direction: column;
   -webkit-animation: vibrate-1 2s linear infinite both;
 	        animation: vibrate-1 2s linear infinite both;
+  transition: 0.3s opacity ease;
 }
 .waiting-for-content .icon {
   width: 139.8px;

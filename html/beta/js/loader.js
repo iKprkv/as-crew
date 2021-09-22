@@ -21,17 +21,9 @@ $(window).bind("load", function() {
   window.scrollTo(0,0);
   setTimeout(function() {
     $('.waiting-for-content').addClass('done');
-  }, 500); //2000
+  }, 500);
   setTimeout(function() {
-    $("html, body").animate({
-      //scrollTop: 0
-    }, 0);
-    $('.waiting-for-content').fadeOut(function() {
-      $(this).remove()
-    });
-    $("#home .title-words .hold").removeClass('hold');
-    //$('.animationWait').each(function( index ) {
-    //$(this).removeClass('animationWait');
-    //});
-  }, 1000); //2500
+     $("html, body").animate({}, 0);
+     $('.waiting-for-content.done').addClass('hide')
+  }, 700);
 });
