@@ -1,6 +1,4 @@
-//screen.orientation.addEventListener('change', function() {
-    //location.reload();
-//});
+
 $(window).bind("load", function () {
   var elements;
   var windowHeight;

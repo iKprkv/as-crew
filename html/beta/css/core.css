@@ -116,6 +116,16 @@ body.fixed {
     font-style: normal;
     letter-spacing: normal;
   }
+  @media screen and (orientation: landscape)  {
+    .t-189 {
+        font-size: 9vw;
+    }
+  }
+  @media screen and (max-width: 716px) and (orientation: portrait)  {
+    .t-189 {
+        font-size: 8vh;
+    }
+  }
 /* text weight */
   .t-w-n {
     font-weight: normal;
