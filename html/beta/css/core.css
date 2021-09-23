@@ -111,7 +111,7 @@ body.fixed {
     letter-spacing: normal;
   }
   .t-189 {
-    font-size: 189px;
+    font-size: 9vw;
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
@@ -157,20 +157,20 @@ body.fixed {
     text-transform: uppercase;
   }
 @media screen and (max-width: 1680px) {
-  .t-189 {
+  /* .t-189 {
     font-size: 160px;
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
-  }
+  } */
 }
 @media screen and (max-width: 1560px) {
-  .t-189 {
+  /* .t-189 {
     font-size: 140px;
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
-  }
+  } */
 }
 @media screen and (max-width: 1440px) {
   .t-19 {
@@ -188,28 +188,28 @@ body.fixed {
 }
 
 @media screen and (max-width: 1300px) {
-  .t-189 {
+  /* .t-189 {
    font-size: 110px;
    font-stretch: normal;
    font-style: normal;
    letter-spacing: normal;
- }
+ } */
 }
 @media screen and (max-width: 1080px) {
-   .t-189 {
+   /* .t-189 {
     font-size: 99px;
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
-  }
+  } */
 }
 @media screen and (max-width: 1000px) {
-   .t-189 {
+   /* .t-189 {
     font-size: 80px;
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
-  }
+  } */
 }
 @media screen and (max-width: 900px) {
   a.arrow:before {
@@ -226,10 +226,10 @@ body.fixed {
 
 }
 @media screen and (max-width: 600px) {
-  .t-189 {
+  /* .t-189 {
    font-size: 55px;
    font-stretch: normal;
    font-style: normal;
    letter-spacing: normal;
- }
+ } */
 }

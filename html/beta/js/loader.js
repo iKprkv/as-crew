@@ -24,6 +24,8 @@ $(window).bind("load", function() {
   }, 500);
   setTimeout(function() {
      $("html, body").animate({}, 0);
-     $('.waiting-for-content.done').addClass('hide')
+     $('.waiting-for-content.done').addClass('hide');
+     //$('#wheel').play();
+     document.getElementById('wheel').play();
   }, 700);
 });
