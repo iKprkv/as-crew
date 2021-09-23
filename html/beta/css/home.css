@@ -83,7 +83,8 @@
 #home .title-words .wheel-video.mobile {
   position: static;
   padding-right: 20%;
-  margin: -10vh auto 0 auto;
+  width: 70vw;
+  margin: -5vh auto 0 auto;
   display: block;
 }
 @media screen and (max-width: 1920px) {
