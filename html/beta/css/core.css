@@ -189,6 +189,10 @@ body.fixed {
   .t-30 {
     font-size: 22px;
   }
+  a.arrow:before {
+    width: 14.2px;
+    right: -26px;
+  }
   /* .t-189 {
     font-size: 100px;
     font-stretch: normal;

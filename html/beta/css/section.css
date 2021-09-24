@@ -28,12 +28,12 @@
   letter-spacing: normal;
   text-align: left;
 }
-.section .columns {
+.columns {
   display: flex;
   justify-content: flex-start;
   align-items:flex-start;
 }
-.section .columns.peer .col {
+.columns.peer .col {
   flex-grow: 1;
   flex-basis: 0;
 }

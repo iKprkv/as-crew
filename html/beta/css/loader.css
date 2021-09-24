@@ -128,3 +128,16 @@
   position: relative;
   bottom: 5px;
 }
+@media screen and (max-width: 900px) {
+  .waiting-for-content .icon {
+  max-width: 20vw;
+  background-size: 100%;
+  max-height: 20vw;
+  }
+  .waiting-for-content .progress {
+    font-size: 1rem;
+  }
+  .waiting-for-content .progress .perc {
+    font-size: 0.5rem;
+  }
+}

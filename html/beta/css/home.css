@@ -125,6 +125,7 @@
 }
 
 @media screen and (max-width: 900px) {
+  
   #home .title-words .care {
     left: 20%;
     top: -100%;

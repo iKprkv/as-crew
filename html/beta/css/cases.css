@@ -213,6 +213,11 @@
   #cases .case:last-child:before {
     content: none;
   }
+  #cases .case .teaser {
+    opacity: 0;
+ 	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+ 	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
   #cases .case .text {
     font-size: 19px;
   }

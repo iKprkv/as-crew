@@ -19,15 +19,6 @@ $(document).ready(function() {
       cursor.removeClass('white');
     });
 
-    // link begin
-    // $("a").on('mouseenter', function(e){
-    //   cursor.fadeOut( "fast", function() {});
-    // })
-    // $("a").on('mouseleave', function(e){
-    //   cursor.fadeIn( "fast", function() {});
-    // })
-    // link end
-
     // round begin
     $("div[data-cursor='round']").on('mouseenter', function(e){
       var text = $(this).attr('data-text')

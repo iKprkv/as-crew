@@ -2,7 +2,7 @@ var position = $(window).scrollTop(),
 stopNav = 0;
 if (window.innerWidth <= 900) {
   $(document).ready(function() {
-    $('#home .menu').insertAfter( $('#home .nav .as-logo') );
+    $('.menu').insertAfter( $('.nav .as-logo') );
   });
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
@@ -21,31 +21,31 @@ if (window.innerWidth <= 900) {
 }
 else {
   $(document).ready(function() {
-    nav = $('#home .nav').innerHeight();
+    nav = $('.nav').innerHeight();
     console.log(nav);
   });
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if(scroll > nav) {
-      $('#home .logo-crew').fadeOut()
+      $('.logo-crew').fadeOut()
     }
     else {
-      $('#home .logo-crew').fadeIn()
+      $('.logo-crew').fadeIn()
     }
   });
 }
 $(document).ready(function() {
   if (window.innerWidth <= 900) {
-    $("#home .secondary-nav").on('click', function(){
+    $(".secondary-nav").on('click', function(){
       $(this).toggleClass('expanded')
     });
   }
-  $("#home .secondary-nav .link").on('click', function(){
+  $(".secondary-nav .link").on('click', function(){
     $(this).addClass('active').siblings().removeClass('active');
   });
 })
 $(window).bind("load", function () {
-  var nav = $('#home .nav'),
+  var nav = $('.nav'),
   darkElementsPx = {};
   navPos = nav.offset().top + (nav.innerHeight()/2);
   function checkDarkPosition() {
@@ -55,7 +55,6 @@ $(window).bind("load", function () {
       positionFromTop = element.offsetTop//.getBoundingClientRect().top,
       height = element.offsetHeight;
       darkElementsPx[i] = [positionFromTop,height];
-
     }
     console.log(darkElementsPx)
   }

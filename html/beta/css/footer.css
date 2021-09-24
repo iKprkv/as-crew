@@ -30,6 +30,7 @@
 
 #footer .phone {
   margin: 6px 0 6px 0;
+  animation-delay: 0.2s
 }
 
 #footer .social-bar {
@@ -37,6 +38,7 @@
   justify-content: space-between;
   align-items: center;
   max-width: 413px;
+  animation-delay: 0.3s;
 }
 
 #footer .start-project-area {
@@ -107,7 +109,7 @@
     font-weight: normal;
   }
   #footer .phone {
-    margin: 16px 0 16px 0;
+    padding: 16px 0 16px 0;
   }
   #footer .mailto,
   #footer .start-project {

@@ -1,6 +1,16 @@
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
 }
+$(document).ready(function() {
+  var lastWinWidth = window.innerWidth;
+
+ window.addEventListener("resize", function() {
+   //console.log(lastWinWidth)
+   if (lastWinWidth != window.innerWidth) {
+     document.location.reload();
+   }
+ }, false);
+});
 var current_progress = 0,
   step = 1; // the smaller this is the slower the progress bar
 function startLoader(stop) {
@@ -25,7 +35,6 @@ $(window).bind("load", function() {
   setTimeout(function() {
      $("html, body").animate({}, 0);
      $('.waiting-for-content.done').addClass('hide');
-     //$('#wheel').play();
      document.getElementById('wheel').play();
      $('#wheel').css('transform','translateZ(-1000px)')
   }, 700);

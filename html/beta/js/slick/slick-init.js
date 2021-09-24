@@ -4,7 +4,7 @@ $(document).ready(function(){
     var cases = $('#cases .projects-list');
     cases.addClass('animationWait fade-in');
     cases.on('init', function(event, slick){
-      $('<div class="cases-counter t-14 c-6c6c6c animationWait slide-in-right"><span class="current c-fff">'+((slick.slickCurrentSlide()+1)<10 ? '0'+(slick.slickCurrentSlide()+1):slick.slickCurrentSlide()+1)+'</span>  |  <span class="">'+ (slick.slideCount<10 ? '0'+slick.slideCount : slick.slideCount)+'</div>').insertBefore(this);
+      $('<div class="cases-counter t-14 c-6c6c6c animationWait fade-in"><span class="current c-fff">'+((slick.slickCurrentSlide()+1)<10 ? '0'+(slick.slickCurrentSlide()+1):slick.slickCurrentSlide()+1)+'</span>  |  <span class="">'+ (slick.slideCount<10 ? '0'+slick.slideCount : slick.slideCount)+'</div>').insertBefore(this);
     })
     $("#cases .projects-list .case .teaser img").each(function() {
       var src = $(this).attr('src');
@@ -91,7 +91,7 @@ $(document).ready(function(){
   if (reviews) {
     reviews.on('init', function(event, slick){
       //console.log('reviews init')
-      $('<div class="reviews-counter t-14 c-6c6c6c animationWait slide-in-right"><span class="current c-c91559">'+((slick.slickCurrentSlide()+1)<10 ? '0'+(slick.slickCurrentSlide()+1):slick.slickCurrentSlide()+1)+'</span>  |  <span class="">'+ (slick.slideCount<10 ? '0'+slick.slideCount : slick.slideCount)+'</div>').insertBefore(this);
+      $('<div class="reviews-counter t-14 c-6c6c6c animationWait fade-in"><span class="current c-c91559">'+((slick.slickCurrentSlide()+1)<10 ? '0'+(slick.slickCurrentSlide()+1):slick.slickCurrentSlide()+1)+'</span>  |  <span class="">'+ (slick.slideCount<10 ? '0'+slick.slideCount : slick.slideCount)+'</div>').insertBefore(this);
     })
     reviews.slick({
       dots: false,
