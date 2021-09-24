@@ -73,6 +73,7 @@
     padding: 0 144px;
     max-width: 100%;
     box-sizing: border-box;
+    width: 100%;
   }
   .popup .p-nav .t-100 {
     font-size: 80px;
