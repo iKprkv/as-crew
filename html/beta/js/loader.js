@@ -27,5 +27,6 @@ $(window).bind("load", function() {
      $('.waiting-for-content.done').addClass('hide');
      //$('#wheel').play();
      document.getElementById('wheel').play();
+     $('#wheel').css('transform','translateZ(-1000px)')
   }, 700);
 });

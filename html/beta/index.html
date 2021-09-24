@@ -48,6 +48,7 @@
     <script src="js/nav.js"></script>
     <script src="js/popup.js"></script>
     <script src="js/video.js"></script>
+
     <!---->
     <div class="popup slide-in-popup">
       <div class="container">
@@ -163,24 +164,26 @@
     </div>
     <!---->
       <!---->
-      <div class="title-words">
+      <div class="title-words" >
         <!---->
         <div class="text">
           <div class="we-just t-189 c-black t-w-800 t-lh-1-2 t-uppr">
             We Just
           </div>
         </div>
-        <!---->
-        <div class="care"></div>
         <!--  -->
         <div class="text">
           <div class="give-a-fuck t-189 c-black t-w-800 t-lh-1-2 t-uppr">
             <span>
-              <img class="splash" src="img/splash@2x.png"></img>
-               <video  muted class="wheel-video" id="wheel"> <!-- autoplay -->
+               <video  muted class="wheel-video" id="wheel">
                 <source src="video/wheel.mp4" type="video/mp4">
               </video>
-              Give a fuck</span>
+              <span>
+                <img class="splash" src="img/splash@2x.png"></img>
+                <img class="care" src="img/word_care@2x.png"></img>
+                Give a fuck
+              </span>
+            </span>
           </div>
         </div>
         <!---->
@@ -200,9 +203,29 @@
       <!---->
       <div class="scroll-text t-14 c-0d0d0d t-lh-1-2 wobble-hor-bottom">Scroll <span>to explore</span></div>
       <!---->
-      <!-- <div class="video-layer">
-
-      </div> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+      <script>
+      $('.we-just').tilt({
+        reset: true,
+        maxTilt: 20,
+        perspective: 1000
+      });
+      $('.give-a-fuck span span').tilt({
+        reset: true,
+        maxTilt:15,
+        perspective: 1000
+      });
+      $('.it-s-that').tilt({
+        reset: true,
+        maxTilt: 20,
+        perspective: 900
+      });
+      $('.simple').tilt({
+        reset: true,
+        maxTilt:20,
+        perspective: 900
+      });
+      </script>
       <!--   -->
   </div>
   <!-- OVERVIEW -->
