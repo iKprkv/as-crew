@@ -41,8 +41,8 @@
 }
 .text-appear {
   transform: translateY(120%);
-  -webkit-animation: text-appear 0.6s cubic-bezier(0.33, 0.89, 0.55, 1.2) forwards;
-  animation: text-appear 0.6s cubic-bezier(0.33, 0.89, 0.55, 1.2) forwards;
+  -webkit-animation: text-appear 0.6s cubic-bezier(0.33, 0.89, 0.55, 1.2) both;
+  animation: text-appear 0.6s cubic-bezier(0.33, 0.89, 0.55, 1.2) both;
 }
 @-webkit-keyframes text-appear {
   0% {
