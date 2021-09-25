@@ -80,7 +80,8 @@
     line-height: 1.2;
   }
   .popup .container {
-    max-height: 75vh;
+    /* max-height: 75vh; */
+    max-height: 600px;
   }
 }
 @media screen and (max-width: 910px) {
@@ -130,14 +131,22 @@
   }
 }
 @media screen and (max-height: 700px) {
+  .popup .container {
+    min-height: 600px;
+    height: 100%;
+    padding-top: 70px;
+  }
+}
+@media screen and (max-height: 700px) and (orientation: portrait) {
+  .popup {
+    justify-content:flex-end;
+    overflow: auto;
+  }
+
+}
+@media screen and (max-height: 700px) and (orientation: landscape)  {
   .popup {
     justify-content: flex-start;
     overflow: auto;
-  }
-  .popup .container {
-    min-height: 700px;
-    height: 100%;
-    padding-top: 70px;
-    /* padding-left: 15vw; */
   }
 }
