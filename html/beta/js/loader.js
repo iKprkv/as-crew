@@ -27,6 +27,7 @@ function startLoader(stop) {
 }
 startLoader(); // начинаем индикацию загрузки
 //});
+var is_safari = navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1 && navigator.userAgent.indexOf('Android') == -1;
 $(window).bind("load", function() {
   window.scrollTo(0,0);
   setTimeout(function() {
