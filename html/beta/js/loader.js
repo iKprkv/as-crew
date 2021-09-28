@@ -4,11 +4,23 @@ if ('scrollRestoration' in history) {
 $(document).ready(function() {
   var lastWinWidth = window.innerWidth;
 
- // window.addEventListener("resize", function() {
- //   if (lastWinWidth != window.innerWidth) {
- //     document.location.reload();
- //   }
- // }, false);
+ window.addEventListener("resize", function() {
+   //console.log('old='+lastWinWidth)
+   //console.log('current='+window.innerWidth)
+    if (lastWinWidth < 900 && window.innerWidth > 900) {
+      console.log('Был мобилка, стал десктоп');
+      lastWinWidth = window.innerWidth;
+      document.location.reload();
+    }
+    if (lastWinWidth > 900 && window.innerWidth < 900) {
+      console.log('Был декстоп, стал мобилка');
+      lastWinWidth = window.innerWidth;
+      document.location.reload();
+    }
+    else {
+      lastWinWidth = window.innerWidth;
+    }
+ }, false);
 
 });
 var current_progress = 0,

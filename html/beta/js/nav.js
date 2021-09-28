@@ -22,7 +22,7 @@ if (window.innerWidth <= 900) {
 else {
   $(document).ready(function() {
     nav = $('.nav').innerHeight();
-    console.log(nav);
+    //console.log(nav);
   });
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
