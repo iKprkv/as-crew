@@ -4,12 +4,12 @@ if ('scrollRestoration' in history) {
 $(document).ready(function() {
   var lastWinWidth = window.innerWidth;
 
- window.addEventListener("resize", function() {
-   //console.log(lastWinWidth)
-   if (lastWinWidth != window.innerWidth) {
-     document.location.reload();
-   }
- }, false);
+ // window.addEventListener("resize", function() {
+ //   if (lastWinWidth != window.innerWidth) {
+ //     document.location.reload();
+ //   }
+ // }, false);
+
 });
 var current_progress = 0,
   step = 1; // the smaller this is the slower the progress bar
@@ -27,7 +27,7 @@ function startLoader(stop) {
 }
 startLoader(); // начинаем индикацию загрузки
 //});
-var is_safari = navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1 && navigator.userAgent.indexOf('Android') == -1;
+//var is_safari = navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1 && navigator.userAgent.indexOf('Android') == -1;
 $(window).bind("load", function() {
   window.scrollTo(0,0);
   setTimeout(function() {
@@ -38,6 +38,6 @@ $(window).bind("load", function() {
      $('body').removeClass('fixed');
      $('.waiting-for-content.done').addClass('hide');
      document.getElementById('wheel').play();
-     $('#wheel').css('transform','translateZ(-1000px)')
+     //$('#wheel').css('transform','translateZ(-1000px)')
   }, 700);
 });
