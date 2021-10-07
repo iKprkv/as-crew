@@ -116,7 +116,7 @@ $(document).ready(function() {
     }
     centeringContent();
   });
-  if (window.innerWidth <= 900) {
+  if (window.innerWidth >= 900) {
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     //console.log(position)
