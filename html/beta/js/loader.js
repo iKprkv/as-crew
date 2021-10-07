@@ -49,7 +49,10 @@ $(window).bind("load", function() {
      $("html, body").animate({}, 0);
      $('body').removeClass('fixed');
      $('.waiting-for-content.done').addClass('hide');
-     document.getElementById('wheel').play();
+
      //$('#wheel').css('transform','translateZ(-1000px)')
   }, 700);
+  setTimeout(function() {
+     $('.section').first().find('.anim').removeClass('hold');
+  }, 850);
 });

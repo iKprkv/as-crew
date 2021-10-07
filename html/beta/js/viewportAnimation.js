@@ -27,22 +27,8 @@ $(window).bind("load", function () {
   init();
   checkPosition();
 
-  function parallaxImage(elm, dir,multiplier) {
-    var elPos = $('.person.'+elm).offset().top;
-    if (elPos - window.innerHeight <= $(document).scrollTop() ) {
-      //console.log(elPos - window.innerHeight)
-      $('.person.'+elm).css(dir,(($(document).scrollTop()+window.innerHeight)* multiplier))
-    }
-  }
 
   $(window).scroll(function() {
-    if (window.innerWidth >= 900) {
-      parallaxImage('sveta','bottom',0.05);
-      parallaxImage('anna','top',0.03);
-    }
-
-
-
     if($(window).scrollTop() + ($(window).height() + 70) >= $(document).height()) {
       $(".animationWait").each(function() {
         $(this).removeClass('animationWait').addClass('animationDelay');

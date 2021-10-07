@@ -5,4 +5,5 @@ $(document).ready(function() {
     video.appendTo( $('#home .title-words') );
     video.addClass('mobile');
   }
+  document.getElementById('wheel').play();
 })

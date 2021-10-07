@@ -1,0 +1,23 @@
+#error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20vh 0;
+}
+#error .e404-word {
+  max-width: 468px;
+}
+@media screen and (max-width: 900px) {
+  #error .e404-word {
+    width: 300px;
+    max-width: 50vw;
+  }
+  #error .oops {
+    font-size: 55px;
+  }
+  #error .link {
+    order: 1;
+    padding: 20px;
+  }
+}

@@ -50,6 +50,7 @@ $(window).bind("load", function () {
   navPos = nav.offset().top + (nav.innerHeight()/2);
   function checkDarkPosition() {
     darkElements = document.querySelectorAll('.section.dark');
+    console.log(darkElements);
     for (var i = 0; i < darkElements.length; i++) {
       var element = darkElements[i],
       positionFromTop = element.offsetTop//.getBoundingClientRect().top,
@@ -150,7 +151,9 @@ $(window).bind("load", function () {
       }
     }
   }
-
+  $(document).ready(function() {
+    navInvert()
+  })
   $(window).scroll(function (event) {
     navInvert()
   });
