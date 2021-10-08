@@ -102,7 +102,7 @@
       justify-content: flex-start;
   }
   #cases .cases-list {
-    padding: 0 0 0 0;
+    padding: 0;
   }
   #cases .cases-list .case .cover {
     width: 50vw;

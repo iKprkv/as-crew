@@ -34,16 +34,6 @@ else {
     }
   });
 }
-$(document).ready(function() {
-  if (window.innerWidth <= 900) {
-    $(".secondary-nav").on('click', function(){
-      $(this).toggleClass('expanded')
-    });
-  }
-  $(".secondary-nav .link").on('click', function(){
-    $(this).addClass('active').siblings().removeClass('active');
-  });
-})
 $(window).bind("load", function () {
   var nav = $('.nav'),
   darkElementsPx = {};

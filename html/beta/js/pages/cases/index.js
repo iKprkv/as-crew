@@ -80,12 +80,27 @@ if (window.innerWidth <= 900) {
   });
 }
 $(document).ready(function() {
+  $(document).ready(function() {
+    if (window.innerWidth <= 900) {
+      $(".secondary-nav").on('click', function(){
+        $(this).toggleClass('expanded')
+      });
+    }
+  })
+
+
+
   $(".secondary-nav .link").on('click', function(){
+    if ($(this).hasClass('active')) {
+      //console.log('tap to active')
+    }
+    else {
+      $("#cases .cases-list").addClass('hold');
+    }
+    $(this).addClass('active').siblings().removeClass('active');
     var type = $(this).data('type');
     console.log(type);
     $(".cases-list .col").removeClass('hidden');
-    $("#cases .cases-list").addClass('hold');
-
     if (type == 'all') {
       setTimeout(function() {
         $("#cases .cases-list").removeClass('hold')
@@ -114,7 +129,9 @@ $(document).ready(function() {
       })
       //
     }
-    centeringContent();
+    if (window.innerWidth < 900) {
+      centeringContent();
+    }
   });
   if (window.innerWidth >= 900) {
   $(window).scroll(function() {
