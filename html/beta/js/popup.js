@@ -27,7 +27,7 @@ $(document).ready(function() {
       $('.popup').addClass('active')
       setTimeout(function() {
         $(".popup .anim").removeClass('hold');
-      }, 500); //2000
+      }, 150); //2000
     }
   })
   $(".popup .p-nav span.text").on('click', function(){
