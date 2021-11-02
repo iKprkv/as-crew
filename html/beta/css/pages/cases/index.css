@@ -77,7 +77,38 @@
 #cases .cases-list .col.hidden {
   display: none;
 }
+#cases .bw-animation {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  animation-duration: 0.5s;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s linear;
+  overflow: hidden;
+}
+#cases .cases-list .case:hover .bw-animation {
+  opacity: 1;
+}
+#cases .cases-list .case svg.fast path {
+  transition: none !important;
+}
+#cases .cases-list .case svg.vacuum {
+  width: 100%;
+}
+#cases .cases-list .case:hover .bw-animation svg{
+  pointer-events: none;
+}
 @media screen and (max-width: 900px) {
+  #cases .bw-animation {
+    display: none;
+  }
   #cases {
     margin: 0;
   }
