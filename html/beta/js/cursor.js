@@ -19,6 +19,13 @@ $(document).ready(function() {
       cursor.removeClass('white');
     });
 
+    $(".cases-list .case").on('mouseenter', function(e){
+      cursor.addClass('white');
+    });
+    $(".cases-list .case").on('mouseleave', function(e){
+      cursor.removeClass('white');
+    });
+
     // round begin
     $("div[data-cursor='round']").on('mouseenter', function(e){
       var text = $(this).attr('data-text')
