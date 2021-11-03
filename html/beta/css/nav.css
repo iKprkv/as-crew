@@ -243,8 +243,8 @@
     right: 0;
     left: 0;
     overflow: hidden;
-    width: 118px;
-    max-height: 33px;
+    width: 140px;
+    max-height: 38px;
     padding: 5px 18.5px 11px 20px;
     background-color: #0d0d0d;
     border-radius: 18px;
@@ -259,7 +259,7 @@
   .secondary-nav .link {
     /* display: none; */
     line-height: 2;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -268,12 +268,12 @@
     text-align: left;
     text-transform: none;
     color: #fff;
-    line-height: 2.08;
+    line-height: 2.30;
   }
   .secondary-nav .link.active {
     display: block;
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 2.08;
     order: -1;
     font-weight: 800;
@@ -288,10 +288,10 @@
     content: '';
     position: absolute;
     display: block;
-    width: 6px;
-    height: 3.9px;
-    right: 14px;
-    top: 15px;
+    width: 8px;
+    height: 5px;
+    right: 17px;
+    top: 18px;
     background-size: 100%;
     background-image: url(../img/svg/arrow.svg);
     transition: 0.2s transform ease;
