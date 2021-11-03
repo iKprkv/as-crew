@@ -1,0 +1,8 @@
+#cover360 .header {
+  background-image: url(../../../img/cases/cover360/header@2x.jpg);
+}
+@media screen and (max-width: 900px) {
+  #cover360 .header {
+    background-image: url(../../../img/cases/cover360/header-mobile@3x.jpg);
+  }
+}
