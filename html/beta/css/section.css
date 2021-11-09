@@ -37,6 +37,24 @@
   background-size: 16px;
   background-image: url(../img/cases/arrow-top@2x.png);
 }
+.list.dots li {
+  position: relative;
+  padding: 0 0 0 10px;
+}
+.list.dots li:before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  content: '';
+  background-color: #0d0d0d;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 1.5;
+}
 @media screen and (max-width: 1920px) {
   .section .container.wide {
      box-sizing: border-box;

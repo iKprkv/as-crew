@@ -1,0 +1,7 @@
+#cover360 .header {
+  background-image: url(../../../img/cases/pwc/header@2x.jpg);
+}
+
+@media screen and (max-width: 900px) {
+  
+}

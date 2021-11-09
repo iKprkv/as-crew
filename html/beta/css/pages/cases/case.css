@@ -19,6 +19,9 @@
 #info .description p + p {
   padding-top: 31px;
 }
+#info .labels {
+  min-width: 200px
+}
 #info .labels .text + .text {
   padding-top: 28px;
 }
