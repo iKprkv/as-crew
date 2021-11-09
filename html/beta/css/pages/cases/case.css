@@ -1,5 +1,6 @@
 .section {
   min-height: auto;
+  position: relative;
 }
 .header {
   min-height: 1080px;
@@ -7,6 +8,7 @@
   box-sizing: border-box;
   padding: 150px 0 0 100px;
   background-size: 1920px;
+  background-position: center;
 }
 #info {
   padding: 85px 0 80px 0;
@@ -14,11 +16,39 @@
 #info .description {
   padding: 0 80px 0 0
 }
-#info .description p + p{
+#info .description p + p {
   padding-top: 31px;
 }
 #info .labels .text + .text {
   padding-top: 28px;
+}
+.close {
+  position: fixed;
+  z-index: 1;
+  bottom: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  background-image: url(../../../img/cases/x.svg);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  border-radius: 50%;
+  background-position: center;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.16);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+.close:hover {
+  transform: scale(1.05);
+}
+.close:active {
+  transform: scale(1.2);
+}
+.imageCase {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 @media screen and (max-width: 1560px) {
   .header {
@@ -26,6 +56,17 @@
   }
 }
 @media screen and (max-width: 900px) {
+  #footer {
+    padding: 10px 0 0 0 !important;
+    min-height: auto !important;
+  }
+  #footer .copyright {
+    text-align: center;
+  }
+  #footer .c-fff,
+  #footer .c-5a5a5a {
+    color: #b4b4b4 !important;
+  }
   .header {
     min-height: 500px;
     background-size: cover;
@@ -45,6 +86,6 @@
     padding: 0;
   }
   #info .description {
-    padding: 0;
+    padding: 0 0 30px 0;
   }
 }

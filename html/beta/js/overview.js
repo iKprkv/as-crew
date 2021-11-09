@@ -11,12 +11,12 @@ $(document).ready(function() {
     $('#overview .tab-area').addClass('switching');
     setTimeout(function(){
       $('#overview .tab-area').removeClass('switching')
-    },200);
+    }, 200);
     if (window.innerWidth <= 900) {
       $('#overview .words').addClass('switching');
       setTimeout(function(){
         $('#overview .words').removeClass('switching')
-      },200);
+      }, 200);
     }
     //
     setTimeout(function() {

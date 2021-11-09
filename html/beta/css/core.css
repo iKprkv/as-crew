@@ -23,6 +23,9 @@ body.fixed {
     background-color: #fff;
     transition: 0.4s width ease-in-out;
   }
+  a.c-2c2c2c:after {
+    background-color: #2c2c2c;
+  }
   a.underline:hover:after {
     width: 0;
   }
@@ -63,6 +66,9 @@ body.fixed {
   }
   .c-5a5a5a {
     color: #5a5a5a;
+  }
+  .c-2c2c2c {
+    color: #2c2c2c;
   }
   .c-fff {
     color: #fff;
@@ -156,6 +162,9 @@ body.fixed {
     line-height: 3.3;
   }
 /* text-align */
+  .t-a-center {
+    text-align: center;
+  }
   .t-a-left {
     text-align: left;
   }

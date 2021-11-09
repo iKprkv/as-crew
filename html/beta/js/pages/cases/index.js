@@ -13,7 +13,12 @@ if (window.innerWidth <= 900) {
     outerContent.scrollLeft((innerContent - outerContent.width()) / 2);
   }
   $(document).ready(function() {
-    $('#footer').remove();
+    if ( $( "#cases" ).length ) {
+      $('#footer').remove();
+    }
+    else {
+      $('.secondary-nav').hide();
+    }
     centeringContent();
 
 
