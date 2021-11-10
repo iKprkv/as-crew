@@ -8,6 +8,7 @@
   box-sizing: border-box;
   padding: 150px 0 0 100px;
   background-size: 1920px;
+  background-repeat: no-repeat;
   background-position: center;
 }
 #info {
@@ -51,7 +52,7 @@
 .imageCase {
   max-width: 100%;
   display: block;
-  margin: 0 auto;
+  margin: 42px auto;
 }
 @media screen and (max-width: 1560px) {
   .header {
@@ -90,5 +91,8 @@
   }
   #info .description {
     padding: 0 0 30px 0;
+  }
+  .imageCase {
+    margin: 11px auto;
   }
 }

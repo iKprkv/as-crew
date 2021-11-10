@@ -1,0 +1,39 @@
+#vacuum .header {
+  background-image: url(../../../img/cases/vacuum/header@2x.jpg);
+}
+.block-08 .text {
+  box-sizing: border-box;
+  /* max-width: 1920px; */
+  margin: 0 auto;
+  padding: 0 85px;
+}
+@media screen and (min-width: 900px) {
+  .block-04 .imageCase,
+  .block-08 .imageCase,
+  .block-10 .imageCase {
+    /* max-width: 1751px; */
+    display: block;
+    padding: 0 85px;
+    box-sizing: border-box;
+  }
+  .block-08 .imageCase {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .block-08 .text br {
+    display: none;
+  }
+  .block-08 .text {
+    font-size: 19px;
+    padding:0 25px;
+  }
+  .block-04 .imageCase,
+  .block-08 .imageCase,
+  .block-10 .imageCase {
+    /* max-width: 1751px; */
+    display: block;
+    padding: 0 25px;
+    box-sizing: border-box;
+  }
+}

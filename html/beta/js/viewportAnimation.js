@@ -1,4 +1,24 @@
+$(document).ready(function() {
+  $('.animationWait').each(function(index) {
+    //console.log($(this).attr('src'))
+    if ($(this).attr('src')) {
+      $(this).addClass('lazy');
+      //var src = $(this+'.lazy').attr('src')
+      //$('img.lazy').attr('lazy-src', src);
+    }
+    else {
+      $(this).find('img').addClass('lazy');
+      //var src = $(this).find('.lazy').attr('src')
+      //$('img.lazy').attr('lazy-src', src);
+    }
+    //$('img.lazy').after('<div class="load-elm-overlay"></div>');
+    //var src = $('img.lazy').attr('scr');
+    //console.log(src);
 
+    //$('img.lazy').removeAttr('src');
+  })
+
+})
 $(window).bind("load", function () {
   var elements;
   var windowHeight;
