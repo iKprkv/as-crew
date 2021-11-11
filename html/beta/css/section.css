@@ -55,15 +55,18 @@
   display: inline-block;
   line-height: 1.5;
 }
-.load-elm-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  opacity: 0.4;
-  background-color: orange;
+.t-19 .list.dots li:before {
+    top: 8px;
+}
+p + p {
+  padding-top: 25px;
+}
+img.lazy {
+  height: 25vh;
+  background: #e9e9e9;
+}
+img.blured {
+  filter: blur(10px);
 }
 @media screen and (max-width: 1920px) {
   .section .container.wide {

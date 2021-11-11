@@ -239,7 +239,7 @@
     align-items: flex-start;
     margin: 0 auto 0 auto;
     position: absolute;
-    top: 39px;
+    top: 19px;
     right: 0;
     left: 0;
     overflow: hidden;
@@ -298,6 +298,7 @@
   }
   .nav {
     position: absolute;
+    padding-top: 25px;
   }
 
   .nav .as-logo span {

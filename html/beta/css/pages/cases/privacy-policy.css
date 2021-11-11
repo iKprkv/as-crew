@@ -1,0 +1,18 @@
+#notice  {
+  padding: 193px 0 81px 0;
+  min-height: auto;
+}
+#notice-text {
+  padding: 0 0 370px 0;
+}
+@media screen and (max-width: 900px) {
+  #notice  {
+    padding: 84px 0 24px 0
+  }
+  .title-words.t-100 {
+    font-size: 43px;
+  }
+  #notice-text {
+    padding: 0 0 56px 0;
+  }
+}

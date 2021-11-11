@@ -1,6 +1,7 @@
 body {
   background-color: #0d0d0d;
   color: #fff;
+
 }
 body.fixed {
   max-height: 100vh;
@@ -97,6 +98,12 @@ body.fixed {
   }
   .t-19 {
     font-size: 19px;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+  }
+  .t-22 {
+    font-size: 22px;
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
