@@ -45,9 +45,6 @@ $(window).bind("load", function () {
            if ($(element).attr('lazy-src')) {
              var lSrc = $(element).attr('lazy-src');
              $(element).attr('src', lSrc).removeAttr('lazy-src').removeClass('lazy');
-             $(element).one("load", function() {
-                $(this).css('background','red')
-             })
            }
         init();
       }
@@ -66,9 +63,6 @@ $(window).bind("load", function () {
         if ($(this).attr('lazy-src')) {
           var lSrc = $(this).attr('lazy-src');
           $(this).attr('src', lSrc).removeAttr('lazy-src').removeClass('lazy');
-          $(this).one("load", function() {
-             $(this).css('background','red')
-          })
         }
       });
     }
