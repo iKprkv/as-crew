@@ -35,7 +35,9 @@
     position: relative;
     z-index: 1;
 }
-
+#home .start-story {
+  z-index: 1;
+}
 @media screen and (orientation: landscape)  {
   #home .title-words .text {
       margin: -3vh 0;

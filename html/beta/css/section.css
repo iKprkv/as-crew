@@ -56,7 +56,7 @@
   line-height: 1.5;
 }
 .t-19 .list.dots li:before {
-    top: 8px;
+    top: 13px;
 }
 p + p {
   padding-top: 25px;
@@ -67,6 +67,10 @@ img.lazy {
 }
 img.blured {
   filter: blur(10px);
+}
+.section img[lazy-src] {
+   height: 100vw;
+   width: 100vw;
 }
 @media screen and (max-width: 1920px) {
   .section .container.wide {
@@ -114,6 +118,9 @@ img.blured {
   }
 }
 @media screen and (max-width: 900px) {
+  .t-19 .list.dots li:before {
+      top: 10px;
+  }
   .back-to-top {
     display: none;
   }

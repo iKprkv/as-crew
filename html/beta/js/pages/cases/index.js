@@ -8,8 +8,8 @@ if (window.innerWidth <= 900) {
       //innerContent = innerContent+this.width();
       innerContent = innerContent + $(this).width()
     })
-    console.log(innerContent);
-    console.log(outerContent.width());
+    //console.log(innerContent);
+    //console.log(outerContent.width());
     outerContent.scrollLeft((innerContent - outerContent.width()) / 2);
   }
   $(document).ready(function() {
@@ -21,13 +21,6 @@ if (window.innerWidth <= 900) {
     }
     centeringContent();
 
-
-    // $('.cases-list').on('mousemove', function(e) {
-    // var leftOffset = $(this).offset().left;
-    // $('container.wide').css('left', -e.clientX + leftOffset);
-    //
-    // console.log($(this).outerWidth() + ' - ' + $(this)[0].scrollWidth);
-    // });
   });
   $(window).bind("load", function() {
     $(".container.wide").addClass('slide-in-bck-bottom');
@@ -116,35 +109,35 @@ $(document).ready(function() {
     }
   });
   if (window.innerWidth >= 900) {
-    $(window).scroll(function() {
-      var scroll = $(window).scrollTop();
-      //console.log(position)
-      $(".cases-list .col").each(function() {
-        //if ($(this).data('r_num')) {
-        var translate = $(this).css('transform');
-        var matrix = translate.replace(/[^0-9\-.,]/g, '').split(',');
-        var y = parseInt(matrix[13]) || parseInt(matrix[5]);
-        if (scroll > position) {
-          if ($(window).scrollTop() <= 0) {
-            $(this).css('transform', 'translate(0, 0)');
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        //console.log(position)
+        $(".cases-list .col").each(function() {
+          //if ($(this).data('r_num')) {
+          var translate = $(this).css('transform');
+          var matrix = translate.replace(/[^0-9\-.,]/g, '').split(',');
+          var y = parseInt(matrix[13]) || parseInt(matrix[5]);
+          if (scroll > position) {
+            if ($(window).scrollTop() <= 0) {
+              $(this).css('transform', 'translate(0, 0)');
+            } else {
+              //console.log('scroll down')
+              var num = y - ($(this).data('r_num'));
+              $(this).css('transform', 'translate(0, ' + num + 'px)');
+            }
           } else {
-            //console.log('scroll down')
-            var num = y - ($(this).data('r_num'));
-            $(this).css('transform', 'translate(0, ' + num + 'px)');
+            //stopNav = $(window).scrollTop();
+            //console.log($(window).scrollTop())
+            //console.log('scroll up')
+            if (y >= 0 || $(window).scrollTop() <= 0) {
+              $(this).css('transform', 'translate(0, 0)');
+            } else {
+              var num = y + ($(this).data('r_num'));
+              $(this).css('transform', 'translate(0, ' + num + 'px)');
+            }
           }
-        } else {
-          //stopNav = $(window).scrollTop();
-          //console.log($(window).scrollTop())
-          //console.log('scroll up')
-          if (y >= 0 || $(window).scrollTop() <= 0) {
-            $(this).css('transform', 'translate(0, 0)');
-          } else {
-            var num = y + ($(this).data('r_num'));
-            $(this).css('transform', 'translate(0, ' + num + 'px)');
-          }
-        }
+        })
+        position = scroll;
       })
-      position = scroll;
-    })
   }
 })

@@ -26,6 +26,9 @@
 #info .labels .text + .text {
   padding-top: 28px;
 }
+#info .labels p + p {
+  padding-top: 0;
+}
 .close {
   position: fixed;
   z-index: 1;
@@ -52,7 +55,10 @@
 .imageCase {
   max-width: 100%;
   display: block;
-  margin: 42px auto;
+  margin: 42px auto 0px auto;
+}
+.imageCase + .imageCase {
+  margin: -42px auto 0 auto;
 }
 @media screen and (max-width: 1560px) {
   .header {
@@ -87,7 +93,7 @@
     padding-bottom: 30px;
   }
   #info .description p + p {
-    padding: 0;
+    padding: 10px 0 0 0;
   }
   #info .description {
     padding: 0 0 30px 0;

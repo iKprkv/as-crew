@@ -1,0 +1,67 @@
+#almette .header {
+  background-image: url(../../../img/cases/almette/header@2x.jpg);
+}
+.block-08 .text {
+  box-sizing: border-box;
+  /* max-width: 1920px; */
+  margin: 0 auto;
+  padding: 0 85px;
+}
+.parallax {
+  min-height: 396px;
+	background: transparent;
+}
+[data-type="background"] {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: 1920px;
+  margin: 42px 0 0 0;
+}
+
+@media screen and (min-width: 900px) {
+  .block-02 .imageCase,
+  .block-03 .imageCase,
+  .block-07 .imageCase,
+  .block-09 .imageCase,
+  .block-11 .imageCase,
+  .block-05 .imageCase,
+  .block-16 .imageCase {
+    display: block;
+    padding: 0 85px;
+    box-sizing: border-box;
+  }
+  .block-13 .imageCase,
+  .block-14 .imageCase,
+  .block-15 .imageCase,
+  .block-17 .imageCase {
+    display: block;
+    padding: 0 85px;
+    box-sizing: border-box;
+    max-width: 1194px;
+    width: 100%;
+  }
+  .block-17 .imageCase {
+    display: block;
+    padding: 0 85px;
+    box-sizing: border-box;
+    max-width: 1194px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  /* .block-08 .text br {
+    display: none;
+  }
+  .block-08 .text {
+    font-size: 19px;
+    padding:0 25px;
+  }
+  */
+  .block-04 .imageCase,
+  .block-08 .imageCase,
+  .block-10 .imageCase {
+    display: block;
+    padding: 0 10vw;
+    box-sizing: border-box;
+  } 
+}

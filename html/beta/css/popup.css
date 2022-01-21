@@ -150,3 +150,28 @@
     overflow: auto;
   }
 }
+
+/* Start Project */
+.popup .container.start-project {
+  justify-content: center;
+}
+.popup .container.start-project .title {
+
+}
+.popup .container.start-project .title .text-wrapper:nth-child(2) .text {
+  animation-delay: 0.1s;
+  padding-left: 175px;
+}
+.popup .container.start-project .form-area {
+  padding-left: 175px;
+}
+.popup .container.start-project .form-area .label {
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
