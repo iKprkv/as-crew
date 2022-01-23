@@ -125,6 +125,11 @@
     margin: 0 10px;
     max-width: none;
   }
+  #cases .cases-list .col:first-child {
+  }
+  #cases .cases-list .col:last-child {
+    padding-right: 5px;
+  }
   #cases .cases-list .case {
     margin: 0 0 20px 0;
   }

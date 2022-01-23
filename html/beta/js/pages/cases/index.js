@@ -2,15 +2,17 @@ if (window.innerWidth <= 900) {
   $('#cases').addClass('dark');
 
   function centeringContent() {
+    console.log('Centerizing begin')
     var outerContent = $('.container.wide');
     var innerContent = 0;
     $(".cases-list .col").each(function() {
       //innerContent = innerContent+this.width();
       innerContent = innerContent + $(this).width()
     })
-    //console.log(innerContent);
     //console.log(outerContent.width());
     outerContent.scrollLeft((innerContent - outerContent.width()) / 2);
+    console.log('Centerizing end');
+    $(".container.wide").addClass('slide-in-bck-bottom');
   }
   $(document).ready(function() {
     if ( $( "#cases" ).length ) {
@@ -23,7 +25,7 @@ if (window.innerWidth <= 900) {
 
   });
   $(window).bind("load", function() {
-    $(".container.wide").addClass('slide-in-bck-bottom');
+
   });
 }
 $(document).ready(function() {
@@ -71,38 +73,38 @@ $(document).ready(function() {
     if ($(this).hasClass('active')) {} else {
       $("#cases .cases-list").addClass('hold');
 
-    $(this).addClass('active').siblings().removeClass('active');
-    $(".cases-list .col").html('');
-    $(".cases-list .col").css('transform', 'translate(0,0)');
-    var type = $(this).data('type');
-    //console.log(type);
-    if (type == 'all') {
+      $(this).addClass('active').siblings().removeClass('active');
+      $(".cases-list .col").html('');
+      $(".cases-list .col").css('transform', 'translate(0,0)');
+      var type = $(this).data('type');
+      //console.log(type);
+      if (type == 'all') {
 
-      $("#cases .cases-list").html(casesDataAll)
-      caseAnimation();
-      setTimeout(function() {
-        $("#cases .cases-list").removeClass('hold')
-      }, 100)
-      // $(".cases-list .case").each(function() {
-      //   $(this).show();
-      // })
-    } else {
-      //console.log(casesData[type])
-      var i = 1;
-      $.each(casesData[type], function(key, value) {
-        //console.log(key)
-        if (i > 3) {
-          i = 1;
-        }
-        $(".cases-list .col:nth-child(" + i + ")").append(value)
-        i++
-      });
-      caseAnimation();
-      setTimeout(function() {
-        $("#cases .cases-list").removeClass('hold');
+        $("#cases .cases-list").html(casesDataAll)
+        caseAnimation();
+        setTimeout(function() {
+          $("#cases .cases-list").removeClass('hold')
+        }, 100)
+        // $(".cases-list .case").each(function() {
+        //   $(this).show();
+        // })
+      } else {
+        //console.log(casesData[type])
+        var i = 1;
+        $.each(casesData[type], function(key, value) {
+          //console.log(key)
+          if (i > 3) {
+            i = 1;
+          }
+          $(".cases-list .col:nth-child(" + i + ")").append(value)
+          i++
+        });
+        caseAnimation();
+        setTimeout(function() {
+          $("#cases .cases-list").removeClass('hold');
 
-      }, 100)
-    }
+        }, 100)
+      }
     }
     if (window.innerWidth < 900) {
       centeringContent();
