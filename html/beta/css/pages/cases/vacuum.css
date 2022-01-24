@@ -24,6 +24,9 @@
   }
 }
 @media screen and (max-width: 900px) {
+  #vacuum .header {
+    background-image: url(../../../img/cases/vacuum/header-mobile@2x.jpg);
+  }
   .block-08 .text br {
     display: none;
   }
