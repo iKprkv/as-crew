@@ -287,10 +287,21 @@
     <img class="imageCase fade-in animationWait" lazy-src="img/cases/vera/pic-11@2x.jpg">
     <!----->
   </div>
-  <!----->
-  <div class="section block-12">
+  <!-- for video -->
+  <script>
+    $(document).ready(function(){
+      $('video').click(function(){
+         $(this).get(0).paused ? $(this).get(0).play() : $(this).get(0).pause();
+      });
+    });
+  </script>
+  <div class="section block-12 fade-in animationWait">
     <!----->
-    <img class="imageCase fade-in animationWait" lazy-src="img/cases/vera/pic-12@2x.jpg">
+    <!--<img class="imageCase fade-in animationWait" lazy-src="img/cases/vera/pic-12@2x.jpg">-->
+    <video width="100%" poster="img/cases/vera/pic-12@2x.jpg">
+      <source src="video/vera_fund.mov" type="video/mp4">
+    </video>
+    <p class="t-12 c-c3c3c3">Video made by Maxim Lakutin</p>
     <!----->
   </div>
   <!----->
