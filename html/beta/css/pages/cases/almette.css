@@ -61,17 +61,9 @@
   .block-08,
   .block-12 {
     height: 25vh !important;
-    background-size: 200vw !important;
+    background-size: 250vw !important;
   }
-  .block-06  {
-    background-image: url(../../../img/cases/almette/parallax/mobile/parallax-01@2x.jpg) !important;
-  }
-  .block-08  {
-    background-image: url(../../../img/cases/almette/parallax/mobile/parallax-02@2x.jpg) !important;
-  }
-  .block-12  {
-    background-image: url(../../../img/cases/almette/parallax/mobile/parallax-03@2x.jpg) !important;
-  }
+
   .block-04 .imageCase,
   .block-08 .imageCase,
   .block-10 .imageCase {
