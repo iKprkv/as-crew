@@ -1,6 +1,9 @@
 #cases #pwc .bw-animation {
   align-items: flex-end;
 }
+#cases #pwc .bw-animation svg {
+  max-height: 100%;
+}
 #cases {
   margin: 0 0 -150px 0;
 }
