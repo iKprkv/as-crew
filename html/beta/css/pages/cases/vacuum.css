@@ -10,7 +10,7 @@
 .text.heading {
   margin-top: 120px;
 }
-.section.dark {
+.section.dark:not(#footer) {
   background-color: transparent;
 }
 @media screen and (min-width: 900px) {
