@@ -67,18 +67,18 @@
   max-width: 477px;
   position: relative;
 }
-#about-us .person.sveta {
+/* #about-us .person.sveta {
   margin-bottom: -80px;
 }
 #about-us .person.anna {
   margin-top: -100px;
   margin-bottom: 160px;
-}
+} */
 #about-us .person a {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 30px;
+  padding: 27px;
   z-index: 1;
 }
 #about-us .person a svg path {
@@ -144,14 +144,18 @@
 #about-us .teammates .pic {
   max-width: 322px;
 }
+#about-us .teammates .sveta .pic,
+#about-us .teammates .anna .pic {
+  max-width: 477px;
+}
 #about-us .teammates .name {
     padding: 18px 0 6px 0;
 }
 @media screen and (min-width: 1440px) {
-  #about-us .person.anna {
+  /* #about-us .person.anna {
     margin-top: -50px;
     margin-bottom: 140px;
-  }
+  } */
 }
 @media screen and (max-width: 1440px) {
   #about-us .person.anna {

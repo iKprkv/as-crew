@@ -41,7 +41,7 @@ $(document).ready(function(){
     team.slick({
       dots: false,
       arrows: false,
-      infinite: false,
+      infinite: true,
       slidesToShow: 2,
       slidesToScroll: 1,
       variableWidth: true,

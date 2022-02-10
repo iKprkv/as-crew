@@ -20,13 +20,12 @@
   padding: 0 100px;
 }
 .back-to-top {
-  opacity: 0.4;
   cursor: pointer;
-  margin: 85px auto;
-  transition: opacity 0.3s linear;
+  margin: 85px auto 57px auto;
+  transition: color 0.3s linear;
 }
 .back-to-top:hover {
-  opacity: 1;
+  color: #0d0d0d;
 }
 .back-to-top:before {
   content: '';
@@ -35,7 +34,11 @@
   height: 16px;
   margin: 0 auto;
   background-size: 16px;
-  background-image: url(../img/cases/arrow-top@2x.png);
+  background-image: url(../img/cases/arrow-top.svg);
+  transition: transition 0.3s linear;
+}
+.back-to-top:hover:before {
+  filter: brightness(0);
 }
 .list.dots li {
   position: relative;
@@ -133,5 +136,18 @@ img.blured {
   }
   .section .title {
     font-size: 44px;
+  }
+  .next-project {
+    font-size: 43px;
+    font-weight: 800;
+    line-height: 1;
+    margin: 51px 0 12px 0;
+  }
+  .project-name {
+    font-size: 19px;
+    font-weight: 800;
+  }
+  .next-cover {
+    height: 100px;
   }
 }

@@ -60,10 +60,8 @@
   </div>
   <!-- popup -->
   <div class="popup slide-in-popup">
-    <!----->
-
     <!-- default menu off--->
-    <div class="container main-menu">
+    <div class="container" style="display:none;">
       <div class="p-nav">
         <div class="text-wrapper">
           <a href="cases.html" class="text c-fff t-100 t-w-800 t-lh-1-2 text-appear hold anim">Cases</a>
@@ -75,7 +73,7 @@
           <span data-go="about-us" class="text c-fff t-100 t-w-800 t-lh-1-2 text-appear hold anim">About</span>
         </div>
         <div class="text-wrapper">
-          <a href="404.html" class="text c-fff t-100 t-w-800 t-lh-1-2 text-appear hold anim">Blog</a>
+          <a href="" class="text c-fff t-100 t-w-800 t-lh-1-2 text-appear hold anim">Blog</a>
         </div>
       </div>
       <div class="columns peer">
@@ -97,7 +95,7 @@
         <div class="col start-project">
           <div class="row hold anim fade-in">
             <div>
-              <a class="start-project arrow t-30 t-w-800 t-lh-1.2 t-a-left c-fff t-uppr underline" href="javascript:void(0)">Start a project</a>
+              <a class=" arrow t-30 t-w-800 t-lh-1.2 t-a-left c-fff t-uppr underline" href="">Start a project</a>
             </div>
           </div>
         </div>
@@ -170,8 +168,7 @@
       <!---->
     </div>
     <!-- start project --->
-    <div class="container start-project" style="display:none;">
-      <div class="wrapper">
+    <div class="container start-project" >
       <!--- back ---->
       <a class="back t-19 t-w-800 t-lh-3 t-a-left c-fff underline text-appear hold anim">Back</a>
       <!-- title --->
@@ -184,7 +181,7 @@
         </div>
       </div>
       <!---->
-      <div class="form-area fade-in hold anim">
+      <div class="form-area">
         <!----->
         <form id="send-new-project">
           <div class="row two-cols">
@@ -193,7 +190,7 @@
               <div class="label">
                 <label for="explicit-label-name">Name</label>
               </div>
-              <div class="input " >
+              <div class="input">
                 <input type="text" id="explicit-label-name" name="name" />
               </div>
             </div>
@@ -241,24 +238,22 @@
                 <label for="explicit-label-email">Tell us about your project...</label>
                 </div>
               <div class="input">
-                <textarea oninput='this.style.height = "";this.style.height = (this.scrollHeight) + "px"' rows="1"></textarea>
+                <textarea oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
               </div>
             </div>
             <!----->
-            <div class="column file">
-              <input id="file-select" type="file" name="file" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx" class="custom-file-input">
-            </div>
           </div>
-          <div class="file-list"></div>
-          <div class="button-area">
-            <input type="submit" value="send">
+          <div class="row">
+            <!----->
+            <div class="">
+              1234
+            </div>
+            <!----->
           </div>
         </form>
         <!----->
       </div>
       <!----->
-    </div>
-    <!----->
     </div>
     <!----->
   </div>
@@ -267,11 +262,7 @@
     <link rel="stylesheet" href="css/home.css?v=1.0">
     <script src="js/video.js"></script>
     <!---->
-    <div class="space"></div>
     <div class="title-words">
-      <div class="title-mobile">
-        <img src="img/title-mobile@3x.png">
-      </div>
       <!---->
       <div class="text">
         <div class="we-just t-189 c-black t-w-800 t-lh-1-2 t-uppr">
@@ -308,10 +299,10 @@
       <!---->
     </div>
     <!---->
-    <div class="space"></div>
-    <div class="text-wrapper center">
-      <a class="start-story start-project arrow t-30 t-w-800 t-lh-1.2 t-a-center c-2c2c2c t-uppr underline text-appear animationDelay" href="#">Let's start your story</a>
-    </div>
+    <!---
+    <div class="text-wrapper">
+      <a class="start-story t-30 t-w-800 t-lh-1.2 t-a-center c-2c2c2c t-uppr underline text-appear animationDelay" href="#">Let's start your story</a>
+    </div>-->
     <!---->
     <div class="scroll-text t-14 c-0d0d0d t-lh-1-2 wobble-hor-bottom">Scroll <span>to explore</span></div>
     <!---->
@@ -324,7 +315,7 @@
       <!---->
       <div class="text-wrapper">
         <div class="title">
-          <div class="text t-19 t-lh-3-3 t-a-right t-w-n c-fff animationWait fade-in">What we do</div>
+          <div class="text t-19 t-lh-3-3 t-a-right t-w-n c-0d0d0d animationWait fade-in">What we do</div>
         </div>
       </div>
       <!---->
@@ -387,10 +378,10 @@
           </div>
           <div class="row buttons">
             <div class="text-wrapper">
-              <a class="see-price arrow t-30 t-w-800 t-lh-1.2 t-a-left c-fff t-uppr underline animationWait text-appear" href="#">see Price</a>
+              <a class="start-project arrow t-30 t-w-800 t-lh-1.2 t-a-left c-fff t-uppr underline animationWait text-appear" href="#">see Price</a>
             </div>
             <div class="text-wrapper">
-              <a class="start-project arrow t-30 t-w-800 t-lh-1.2 t-a-left c-fff t-uppr underline animationWait text-appear" href="javascript:void(0)">Start a project</a>
+              <a class="start-project arrow t-30 t-w-800 t-lh-1.2 t-a-left c-fff t-uppr underline animationWait text-appear" href="#">Start a project</a>
             </div>
           </div>
         </div>
@@ -660,40 +651,6 @@
               involve them in our projects.</p>
           </div>
           <!---->
-
-          <!---->
-        </div>
-        <div class="col">
-          <!---->
-
-          <!---->
-        </div>
-      </div>
-      <!---->
-    </div>
-    <div class="team animationWait fade-in">
-      <!---->
-      <<<<<<<<<br>
-      UNDER RECONSTRUCTION
-      <br>>>>>>>>>
-      <br>
-      <div id="team" class="teammates" style="display:none">
-        <div>
-          <div class="helper">
-            <img class="pic" src="img/igor-k@2x.jpg">
-            <div class="text-wrapper">
-              <div class="name t-19 t-w-800 t-lh-1-2 c-0d0d0d">
-                Igor Kopryakov
-              </div>
-            </div>
-            <div class="text-wrapper">
-              <div class="c-14 t-lh-1-2 c-c91559">
-                Frontend Developer
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
           <div class="person anna animationWait fade-in">
             <a target="_blank" href="https://www.instagram.com/anuta_f/">
               <svg xmlns="http://www.w3.org/2000/svg" width="31.484" height="31.484" viewBox="0 0 31.484 31.484">
@@ -724,8 +681,10 @@
               </div>
             </div>
           </div>
+          <!---->
         </div>
-        <div>
+        <div class="col">
+          <!---->
           <div class="person sveta animationWait fade-in">
             <a target="_blank" href="https://www.instagram.com/_sweest_/">
               <svg xmlns="http://www.w3.org/2000/svg" width="31.484" height="31.484" viewBox="0 0 31.484 31.484">
@@ -752,6 +711,33 @@
             <div class="text-wrapper">
               <div class="c-14 t-lh-1-2 c-c91559">
                 Co-Founder, Art direction, UI/UX
+              </div>
+            </div>
+          </div>
+          <!---->
+        </div>
+      </div>
+      <!---->
+    </div>
+    <!-- <div class="container team left-padding animationWait fade-in"> -->
+    <div class="team animationWait fade-in">
+      <!---->
+      <div class="text t-19 c-0d0d0d t-lh-1-6 animationWait fade-in padding-30-0">
+        <p>No matter how talented we are, we still need help. So, meet our small closely-knit team.</p>
+      </div>
+      <!---->
+      <div id="team" class="teammates">
+        <div>
+          <div class="helper">
+            <img class="pic" src="img/igor-k@2x.jpg">
+            <div class="text-wrapper">
+              <div class="name t-19 t-w-800 t-lh-1-2 c-0d0d0d">
+                Igor Kopryakov
+              </div>
+            </div>
+            <div class="text-wrapper">
+              <div class="c-14 t-lh-1-2 c-c91559">
+                Frontend Developer
               </div>
             </div>
           </div>
@@ -997,7 +983,7 @@
             <!---->
             <div class="row">
               <div class="text-wrapper">
-                <a class="start-project arrow t-30 t-w-800 t-lh-1.2 t-a-left c-fff t-uppr underline animationWait text-appear" href="javascript:void(0)">Start a project</a>
+                <a class="start-project arrow t-30 t-w-800 t-lh-1.2 t-a-left c-fff t-uppr underline animationWait text-appear" href="">Start a project</a>
               </div>
             </div>
             <div class="row  animationWait fade-in">

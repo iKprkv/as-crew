@@ -24,7 +24,7 @@ function effect(e,s) {
     },100)
 }
 $(document).ready(function(){
-  $("#persons-focus .person").on('mouseenter', function(e){
+  $("#team .person").on('mouseenter', function(e){
     $(this).find('.effect').fadeIn( 150, function() {});
     stopEffect = false;
     effect(this);
@@ -33,18 +33,18 @@ $(document).ready(function(){
     stopEffect = true;
   });
 
-  function parallaxImage(elm, dir,multiplier) {
-    var elPos = $('.person.'+elm).offset().top;
-    if (elPos - window.innerHeight <= $(document).scrollTop() ) {
-      //console.log(elPos - window.innerHeight)
-      $('.person.'+elm).css(dir,(($(document).scrollTop()+window.innerHeight)* multiplier))
-    }
-  }
-
-  $(window).scroll(function() {
-    if (window.innerWidth >= 900) {
-      parallaxImage('sveta','bottom',0.05);
-      parallaxImage('anna','top',0.03);
-    }
-  });
+  // function parallaxImage(elm, dir,multiplier) {
+  //   var elPos = $('.person.'+elm).offset().top;
+  //   if (elPos - window.innerHeight <= $(document).scrollTop() ) {
+  //     //console.log(elPos - window.innerHeight)
+  //     $('.person.'+elm).css(dir,(($(document).scrollTop()+window.innerHeight)* multiplier))
+  //   }
+  // }
+  //
+  // $(window).scroll(function() {
+  //   if (window.innerWidth >= 900) {
+  //     parallaxImage('sveta','bottom',0.05);
+  //     parallaxImage('anna','top',0.03);
+  //   }
+  // });
 });

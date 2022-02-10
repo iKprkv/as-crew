@@ -142,7 +142,7 @@ $(window).bind("load", function () {
     }
   }
   $(document).ready(function() {
-    navInvert()
+    navInvert();
   })
   $(window).scroll(function (event) {
     navInvert()
