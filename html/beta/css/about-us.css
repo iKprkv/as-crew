@@ -137,9 +137,18 @@
   display: none;
 }
 #about-us .teammates {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 0 120px 0;
+  /* display: flex;
+  justify-content: space-between; */
+  /* margin: 0 0 120px 0; */
+  margin: 50px auto 120px auto;
+  /* max-width: 1600px; */
+}
+#about-us .teammates .slick-slide {
+  padding: 0 44px 0 0;
+  box-sizing: border-box;
+}
+#about-us .teammates .slick-list {
+  overflow: inherit;
 }
 #about-us .teammates .pic {
   max-width: 322px;
@@ -151,11 +160,8 @@
 #about-us .teammates .name {
     padding: 18px 0 6px 0;
 }
-@media screen and (min-width: 1440px) {
-  /* #about-us .person.anna {
-    margin-top: -50px;
-    margin-bottom: 140px;
-  } */
+@media screen and (max-width: 1600px) {
+
 }
 @media screen and (max-width: 1440px) {
   #about-us .person.anna {
@@ -197,7 +203,7 @@
     width: 36px;
   }
   #about-us .teammates {
-    margin: 0 0 80px 0;
+    margin: 0 auto 0 auto;
   }
   #about-us #brands {
       margin: 20px 0;
@@ -212,7 +218,7 @@
 }
 @media screen and (max-width: 1200px) {
   #about-us .teammates {
-
+    max-width: 870px;
   }
   #about-us .teammates .helper {
     max-width: 322px;

@@ -154,12 +154,24 @@
   #home .title-mobile img {
     max-width: 100%;
   }
-  #home .start-story,
+  #home .start-story:before {
+    content: none;
+  }
+  #home .start-story {
+    font-size: 12px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.17;
+      letter-spacing: 1.2px;
+      margin: 0;
+  }
+  #home .scroll-text,
   #home .space {
     display: none;
   }
   #home {
-    padding: 100px 0 50px 0;
+    padding: 100px 0 0 0;
   }
   #home .title-words .text {
     display: none;

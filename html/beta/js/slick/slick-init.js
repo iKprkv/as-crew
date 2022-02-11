@@ -36,26 +36,34 @@ $(document).ready(function(){
     });
   }
   // team
-  if (window.innerWidth <= 900) {
+  //if (window.innerWidth <= 900) {
     var team = $('#team');
     team.slick({
       dots: false,
       arrows: false,
-      infinite: true,
+      infinite: false,
       slidesToShow: 2,
       slidesToScroll: 1,
       variableWidth: true,
+      // centerPadding: '100px',
+      initialSlide: 2,
+      // centerMode:true,
       responsive: [
       {
-        breakpoint: 450,
+        breakpoint: 1600,
         settings: {
-          centerMode: false,
+          //slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
           slidesToShow: 1
         }
       }
-    ]
-  })
-  }
+      ]
+    })
+  //}
   // persons
   if (window.innerWidth <= 900) {
       $('#about-us .columns .text').prependTo( $('.container.team') );
