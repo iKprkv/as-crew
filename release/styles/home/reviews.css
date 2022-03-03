@@ -1,0 +1,106 @@
+#reviews {
+  background-color: #f8f8f8;
+  padding: 160px 0 150px 0;
+  min-height: auto;
+}
+#reviews .subtitle {
+  margin: 8px 0 0 0;
+}
+#reviews .carousel {
+  margin: 122px 0 0 0;
+  display: flex;
+  overflow: auto;
+}
+#reviews .carousel .quotes {
+  position: relative;
+  padding: 20px 78px 100px 78px;
+}
+#reviews .carousel .quotes::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40.7px;
+  height: 32px;
+  left: 20px;
+  top: 8px;
+  background-size: 100%;
+  background-image: url('/images/svg/quotes.svg')
+}
+#reviews .carousel .text {
+  padding: 0 0 26px 0;
+  width: 450px;
+}
+#reviews .carousel .name {
+  padding: 0 0 9px 0;
+}
+#reviews .carousel .link {
+  padding: 22px 0 0px 0;
+}
+#reviews .reviews-counter {
+  display: none;
+  position: absolute;
+  right: 19px;
+  margin: 40px 0 0 0;
+}
+#reviews .reviews-counter span {
+  display: inline-block;
+  padding: 0 10px;
+  top: 0;
+  right: 19px;
+}
+@media screen and (max-width: 1440px) {
+  #reviews {
+    padding: 72px 0 20px 0;
+  }
+  #reviews .subtitle {
+    padding-left: 170px;
+  }
+  #reviews .carousel {
+    margin: 50px 0 0 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  #reviews .subtitle {
+    margin: 12px 0 0 0;
+    padding: 0;
+  }
+  #reviews .subtitle.t-30 {
+    font-size: 19px;
+    line-height: 1.37;
+  }
+  #reviews {
+    padding: 42px 0;
+  }
+  #reviews .carousel {
+    margin: 30px 0 0 0;
+  }
+  #reviews .carousel .quotes {
+    padding: 40px 25px 20px 0;
+    width: 450px;
+  }
+  #reviews .carousel .quotes::before {
+    left: 0;
+    top: 0;
+  }
+  #reviews .carousel .text {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  #reviews .carousel .quotes {
+    width: 325px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #reviews .reviews-counter {
+    display: block;
+  }
+}
+@media screen and (max-width: 450px) {
+#reviews .carousel .quotes::before {
+  left: 25px;
+}
+#reviews .carousel .quotes {
+  width: 85vw;
+  padding: 50px 25px 20px 25px;
+}

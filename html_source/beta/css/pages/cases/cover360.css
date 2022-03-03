@@ -1,0 +1,66 @@
+#cover360 .header {
+  background-image: url(../../../img/cases/cover360/header@2x.jpg);
+}
+.quote:before {
+  content: '';
+  display: block;
+  width: 69.5px;
+  height: 59.5px;
+  background-size: 100%;
+  margin: 0 0 28px 0;
+  background-image: url(../../../img/cases/quotes@2x.png);
+}
+.quote {
+  position: absolute;
+  z-index: 1;
+  box-sizing: border-box;
+  max-width: 1920px;
+  top: 17%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+.block-02 .text {
+  position: absolute;
+  z-index: 1;
+  box-sizing: border-box;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 20px;
+  top: 47%;
+  left: 0;
+  right: 0;
+}
+.block-02 .text div {
+  max-width: 664px;
+}
+@media screen and (max-width: 1560px) {
+  .quote {
+    padding:0 25px;
+  }
+}
+@media screen and (max-width: 900px) {
+  #cover360 .header {
+    background-image: url(../../../img/cases/cover360/header-mobile@3x.jpg);
+  }
+  .quote {
+    position: static;
+    margin: 0 0 30px 0;
+  }
+  .quote:before {
+    width: 38px;
+    height: 32.5px;
+    margin: 0 0 21px 0;
+  }
+  .quote .text br {
+    display: none;
+  }
+  .quote .text {
+    font-size: 19px;
+  }
+  .block-02 .text {
+    position: static;
+    padding: 20px 25px;
+  }
+}

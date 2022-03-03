@@ -1,0 +1,10 @@
+#pwc .header {
+  background-image: url(/images/cases/pwc/header@2x.jpg);
+}
+
+
+@media screen and (min-width: 900px) {
+  .title-words {
+    max-width: 600px;
+  }
+}

@@ -1,0 +1,67 @@
+#post {
+  padding: 179px 0 135px 0;
+}
+.header {
+  height: 700px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
+  margin: 66px 0;
+}
+#post h1 {
+    font-size: 60px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+    margin: 0 0 38px 0;
+}
+#post h3 {
+  font-size: 30px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+  margin: 56px 0 28px 0;
+}
+#post p,
+#post ul li {
+  font-size: 19px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0d0d0d;
+}
+#post ul {
+  padding: 30px 0;
+}
+#post ul li:before {
+  content: '\2022';
+  padding: 0 5px 0 0;
+}
+#post img {
+  max-width: 100%;
+}
+.back-area {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.back {
+  margin: 0 auto 79px auto;
+  display: block;
+}
+@media screen and (max-width: 1560px) {
+  .header {
+
+  }
+}

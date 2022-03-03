@@ -1,0 +1,82 @@
+.next-area {
+  text-align: center;
+}
+.next-project {
+  margin: 0 0 32px 0;
+  display: block;
+}
+.next-project:hover {
+  color: #c91559;
+}
+.next-cover {
+  height: 350px;
+  margin: 0 0 32px 0;
+  background-size: cover;
+  background-position: center;
+}
+.project-name {
+  margin: 0 0 33px 0;
+}
+/****/
+.next-cover#vera {
+  background-image: url(/images/cases/next-project/vera@2x.jpg);
+}
+/****/
+.next-cover#collection-of-logos {
+  background-image: url(/images/cases/next-project/logos@2x.jpg);
+}
+/****/
+.next-cover#cover360 {
+  background-image: url(/images/cases/next-project/360@2x.jpg);
+}
+/****/
+.next-cover#almette {
+  background-image: url(/images/cases/next-project/almette@2x.jpg);
+}
+/****/
+.next-cover#pwc {
+  background-image: url(/images/cases/next-project/pwc@2x.jpg);
+}
+/****/
+.next-cover#k-beauty {
+  background-image: url(/images/cases/next-project/k-beauty@2x.jpg);
+}
+/****/
+.next-cover#vacuum {
+  background-image: url(/images/cases/next-project/vacuum@2x.jpg);
+}
+/****/
+.next-cover#runnersfix {
+  background-image: url(/images/cases/next-project/runnersfix@2x.jpg);
+}
+/****/
+.next-cover#antistatique {
+  background-image: url(/images/cases/next-project/ant@2x.jpg);
+}
+/****/
+.next-cover#runnersfix-web {
+  background-image: url(/images/cases/next-project/run-website@2x.jpg);
+}
+/****/
+.next-cover#avon-beauty {
+  background-image: url(/images/cases/next-project/avon-beauty@2x.jpg);
+}
+/****/
+.next-cover#pole {
+  background-image: url(/images/cases/next-project/pole@2x.jpg);
+}
+@media screen and (max-width: 900px) {
+  .next-project {
+    font-size: 43px;
+    font-weight: 800;
+    line-height: 1;
+    margin: 51px 0 12px 0;
+  }
+  .project-name {
+    font-size: 19px;
+    font-weight: 800;
+  }
+  .next-cover {
+    height: 100px;
+  }
+}

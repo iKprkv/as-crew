@@ -1,0 +1,29 @@
+/* .section.dark {
+  background-color: #fff;
+  color: #0d0d0d;
+} */
+#pole .header {
+  background-image: url(/images/cases/pole/header@2x.jpg);
+}
+
+.imageCase {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 0 auto;
+}
+
+
+@media screen and (min-width: 900px) {
+  .secondary-nav .link {
+    color: #fff;
+  }
+
+}
+@media screen and (max-width: 900px) {
+  .title-words.c-fff {
+    color: #0d0d0d
+  }
+  #pole .header {
+    background-image: url(/images/cases/pole/header-m@3x.jpg);
+  }
+}

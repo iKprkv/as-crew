@@ -1,0 +1,27 @@
+#list  {
+  padding: 193px 0 81px 0;
+}
+#list .post-title .text.t-22 br {
+  display: none;
+}
+#list .post {
+  display: flex;
+  justify-content:flex-start;
+}
+#list .post + .post {
+  margin-top: 60px;
+}
+#list .post .thumbnail {
+  min-width: 200px;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (max-width: 900px) {
+  #list  {
+    padding: 84px 0 24px 0
+  }
+  .title-words.t-100 {
+    font-size: 43px;
+  }
+}
